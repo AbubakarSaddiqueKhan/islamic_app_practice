@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_quran_api_practice/model/all_hadith_model.dart';
-import 'package:flutter_quran_api_practice/model/hadith_all_categories_model.dart';
-import 'package:flutter_quran_api_practice/view_models/Hadith_Bloc/AllHadith/all_hadith_bloc.dart';
-import 'package:flutter_quran_api_practice/view_models/Hadith_Bloc/HadithDetailsBloc/hadith_details_bloc.dart';
+import 'package:flutter_quran_api_practice/model/Hadith/all_hadith_model.dart';
+import 'package:flutter_quran_api_practice/model/Hadith/hadith_all_categories_model.dart';
+import 'package:flutter_quran_api_practice/view_models/Blocs/Hadith_Bloc/AllHadith/all_hadith_bloc.dart';
+import 'package:flutter_quran_api_practice/view_models/Blocs/Hadith_Bloc/HadithDetailsBloc/hadith_details_bloc.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/hadith_api_service/all_hadith_api_service.dart';
 import 'package:flutter_quran_api_practice/views/widgets/Hadith_Screens_Widgets/all_hadith_list_deisgn.dart';
 import 'dart:developer' as developer;

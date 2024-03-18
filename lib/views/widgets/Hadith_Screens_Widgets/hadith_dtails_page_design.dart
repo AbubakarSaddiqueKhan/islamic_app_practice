@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_quran_api_practice/model/arabic_lanuage_hadith_detailed_model.dart';
-import 'package:flutter_quran_api_practice/model/translated_language_hadith_detailed_model.dart';
+import 'package:flutter_quran_api_practice/model/Hadith/arabic_lanuage_hadith_detailed_model.dart';
+import 'package:flutter_quran_api_practice/model/Hadith/translated_language_hadith_detailed_model.dart';
 
 class HadithDetailPageDesign extends StatelessWidget {
   const HadithDetailPageDesign(

@@ -62,11 +62,11 @@
 //               //               ),
 //               //               Text(
 //               //                 "${surahs[index].number.toString()}. ",
-//               //                 style: const TextStyle(
-//               //                     fontFamily: "Archivo",
-//               //                     color: Colors.white,
-//               //                     fontSize: 18),
-//               //               ),
+                            //   style: const TextStyle(
+                            //       fontFamily: "Archivo",
+                            //       color: Colors.white,
+                            //       fontSize: 18),
+                            // ),
 //               //               Text(
 //               //                 surahs[index].englishName,
 //               //                 style: const TextStyle(

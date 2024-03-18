@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quran_api_practice/model/audio_arabic_quran_model.dart';
-import 'package:flutter_quran_api_practice/model/quran_api_model.dart';
-import 'package:flutter_quran_api_practice/model/urdu_Audio_quran_model.dart';
-import 'package:flutter_quran_api_practice/model/urdu_translated_quran_api_model.dart';
+import 'package:flutter_quran_api_practice/model/Quran/audio_arabic_quran_model.dart';
+import 'package:flutter_quran_api_practice/model/Quran/quran_api_model.dart';
+import 'package:flutter_quran_api_practice/model/Quran/urdu_Audio_quran_model.dart';
+import 'package:flutter_quran_api_practice/model/Quran/urdu_translated_quran_api_model.dart';
 import 'package:flutter_quran_api_practice/views/widgets/Quran_Screens_Widgets/custom_list_tile_widgets.dart';
 
 class FetchQuranDataLoadedWidget extends StatelessWidget {

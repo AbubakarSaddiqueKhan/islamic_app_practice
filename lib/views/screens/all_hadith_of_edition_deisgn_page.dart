@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quran_api_practice/model/hadith_edition_data_model.dart';
+import 'package:flutter_quran_api_practice/model/Hadith/hadith_edition_data_model.dart';
 
 class AllHadithOfEditionDesignPage extends StatelessWidget {
   const AllHadithOfEditionDesignPage(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_quran_api_practice/view_models/QuranBlock/quran_api_bloc.dart';
+import 'package:flutter_quran_api_practice/view_models/Blocs/QuranBlock/quran_api_bloc.dart';
 import 'package:flutter_quran_api_practice/views/widgets/Quran_Screens_Widgets/fetch_quran_api_initial_widget.dart';
 import 'package:flutter_quran_api_practice/views/widgets/Quran_Screens_Widgets/fetch_quran_api_loading_widet.dart';
 import 'package:flutter_quran_api_practice/views/widgets/Quran_Screens_Widgets/fetch_quran_error_widget.dart';

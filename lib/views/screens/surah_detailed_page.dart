@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quran_api_practice/model/audio_arabic_quran_model.dart';
-import 'package:flutter_quran_api_practice/model/quran_api_model.dart';
-import 'package:flutter_quran_api_practice/model/urdu_Audio_quran_model.dart';
-import 'package:flutter_quran_api_practice/model/urdu_translated_quran_api_model.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_quran_api_practice/model/Quran/audio_arabic_quran_model.dart';
+import 'package:flutter_quran_api_practice/model/Quran/quran_api_model.dart';
+import 'package:flutter_quran_api_practice/model/Quran/urdu_Audio_quran_model.dart';
+import 'package:flutter_quran_api_practice/model/Quran/urdu_translated_quran_api_model.dart';
+import 'package:flutter_quran_api_practice/view_models/Blocs/TafsirEQuran/tafsir_e_quran_bloc.dart';
 import 'package:flutter_quran_api_practice/views/widgets/Quran_Screens_Widgets/display_quranic_verses_list_widget.dart';
 
 class SurahDetailedPage extends StatelessWidget {
@@ -23,13 +25,18 @@ class SurahDetailedPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final Size(:width, :height) = MediaQuery.sizeOf(context);
     return Scaffold(
-        body: Center(
-            child: QuranicVersesListViewWidget(
-      surah: surah,
-      englishTranslatedSurah: englishTranslatedSurah,
-      urduTranslatedSurah: urduTranslatedSurah,
-      audioArabicQuranSurah: audioArabicQuranSurah,
-      urduAudioQuranSurah: urduAudioQuranSurah,
+        body: Center(child: BlocBuilder<TafsirEQuranBloc, TafsirEQuranState>(
+      builder: (context, state) {
+        if (state is TafsirEQuranInitialState) {
+        } else {}
+        return QuranicVersesListViewWidget(
+          surah: surah,
+          englishTranslatedSurah: englishTranslatedSurah,
+          urduTranslatedSurah: urduTranslatedSurah,
+          audioArabicQuranSurah: audioArabicQuranSurah,
+          urduAudioQuranSurah: urduAudioQuranSurah,
+        );
+      },
     )));
   }
 }

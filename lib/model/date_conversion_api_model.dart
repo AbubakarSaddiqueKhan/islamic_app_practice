@@ -3,22 +3,22 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 
-class DateConversionModel {
+class IslamicDateConversionModel {
   int code;
   String status;
   Data data;
-  DateConversionModel({
+  IslamicDateConversionModel({
     required this.code,
     required this.status,
     required this.data,
   });
 
-  DateConversionModel copyWith({
+  IslamicDateConversionModel copyWith({
     int? code,
     String? status,
     Data? data,
   }) {
-    return DateConversionModel(
+    return IslamicDateConversionModel(
       code: code ?? this.code,
       status: status ?? this.status,
       data: data ?? this.data,
@@ -33,8 +33,8 @@ class DateConversionModel {
     };
   }
 
-  factory DateConversionModel.fromMap(Map<String, dynamic> map) {
-    return DateConversionModel(
+  factory IslamicDateConversionModel.fromMap(Map<String, dynamic> map) {
+    return IslamicDateConversionModel(
       code: map['code'] as int,
       status: map['status'] as String,
       data: Data.fromMap(map['data'] as Map<String, dynamic>),
@@ -43,15 +43,16 @@ class DateConversionModel {
 
   String toJson() => json.encode(toMap());
 
-  factory DateConversionModel.fromJson(String source) =>
-      DateConversionModel.fromMap(json.decode(source) as Map<String, dynamic>);
+  factory IslamicDateConversionModel.fromJson(String source) =>
+      IslamicDateConversionModel.fromMap(
+          json.decode(source) as Map<String, dynamic>);
 
   @override
   String toString() =>
       'DateConversionApiService(code: $code, status: $status, data: $data)';
 
   @override
-  bool operator ==(covariant DateConversionModel other) {
+  bool operator ==(covariant IslamicDateConversionModel other) {
     if (identical(this, other)) return true;
 
     return other.code == code && other.status == status && other.data == data;

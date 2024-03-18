@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_quran_api_practice/view_models/Hadith_Bloc/HadithEditionDataBloc/hadith_edition_data_bloc.dart';
+import 'package:flutter_quran_api_practice/view_models/Blocs/Hadith_Bloc/HadithEditionDataBloc/hadith_edition_data_bloc.dart';
 import 'dart:developer' as developer;
 
 import 'package:flutter_quran_api_practice/views/screens/all_hadith_of_edition_deisgn_page.dart';

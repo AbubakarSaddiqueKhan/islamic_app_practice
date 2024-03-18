@@ -1,4 +1,4 @@
-import 'package:flutter_quran_api_practice/model/quran_api_model.dart';
+import 'package:flutter_quran_api_practice/model/Quran/quran_api_model.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/api_service.dart';
 
 class EnglishTranslatedQuranApiService extends ApiService {

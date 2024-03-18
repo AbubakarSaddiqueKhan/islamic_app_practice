@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_quran_api_practice/view_models/Hadith_Bloc/AllHadithCategoriesBloc/all_hadith_categories_bloc.dart';
+import 'package:flutter_quran_api_practice/view_models/Blocs/Hadith_Bloc/AllHadithCategoriesBloc/all_hadith_categories_bloc.dart';
 
 class HaidthPageInitialWidget extends StatelessWidget {
   const HaidthPageInitialWidget({super.key});

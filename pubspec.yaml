@@ -38,8 +38,9 @@ dependencies:
   flutter_bloc: ^8.1.4
   lottie: ^3.1.0
   google_fonts: ^6.2.1
-  # Package will be imported for use .
   audioplayers: ^5.2.1
+  geolocator: ^11.0.0
+  geocoding: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -64,9 +65,14 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/a1.mp3
+    - assets/a2.mp3
+    - assets/a3.mp3
     - assets/animations/
     - assets/fonts/
     - assets/images/
+    - assets/icons/
+    # - assets/audio/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

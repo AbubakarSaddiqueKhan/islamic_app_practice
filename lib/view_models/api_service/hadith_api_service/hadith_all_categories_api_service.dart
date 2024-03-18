@@ -1,4 +1,4 @@
-import 'package:flutter_quran_api_practice/model/hadith_all_categories_model.dart';
+import 'package:flutter_quran_api_practice/model/Hadith/hadith_all_categories_model.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/api_service.dart';
 
 class HadithAllCategoriesApiService extends ApiService {
