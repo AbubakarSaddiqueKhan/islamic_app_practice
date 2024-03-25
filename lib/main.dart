@@ -2,11 +2,22 @@ import 'dart:async';
 import 'dart:typed_data';
 import 'dart:math' as math;
 
+//
+// Text(
+//   "‏ ﻿﻿ ﴿Allah﴾",
+//   textDirection: TextDirection.rtl,
+//   style: TextStyle(
+//       fontSize: 32,
+//       color: Colors.amber,
+//       fontFamily: "Saleem"),
+// )
+
 // import 'package:audioplayers/audioplayers.dart';
 // import 'package:audioplayers/audioplayers.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_quran_api_practice/Navigation/on_generate_route.dart';
 import 'package:flutter_quran_api_practice/model/Hadith/all_hadith_editions_model.dart';
 import 'package:flutter_quran_api_practice/model/Hadith/all_hadith_model.dart';
 import 'package:flutter_quran_api_practice/model/Hadith/arabic_lanuage_hadith_detailed_model.dart';
@@ -41,6 +52,14 @@ import 'package:flutter_quran_api_practice/view_models/api_service/hadith_api_se
 import 'package:flutter_quran_api_practice/view_models/api_service/hadith_api_service/hadith_all_categories_api_service.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/hadith_api_service/hadith_edition_api_service.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/DateConversionsApiService/month_converted_api_service.dart';
+import 'package:flutter_quran_api_practice/views/screens/Asma_Al_Husna_Main_Page/asma_al_husnaa_main_page_design.dart';
+import 'package:flutter_quran_api_practice/views/screens/Practice_Islam_Screens/Prayer_Screens/prayer_in_%20the_light_of_quran.dart';
+import 'package:flutter_quran_api_practice/views/screens/Practice_Islam_Screens/Prayer_Screens/prayer_in_the_light_of_the%20hadith.dart';
+import 'package:flutter_quran_api_practice/views/screens/Practice_Islam_Screens/Prayer_Screens/obligations_of_prayer.dart';
+import 'package:flutter_quran_api_practice/views/screens/Practice_Islam_Screens/Prayer_Screens/prophetic_way_of_prayer.dart';
+import 'package:flutter_quran_api_practice/views/screens/Practice_Islam_Screens/pratice_islam_main_page_design.dart';
+import 'package:flutter_quran_api_practice/views/screens/Practice_Islam_Screens/Prayer_Screens/prayer_introduction_page.dart';
+import 'package:flutter_quran_api_practice/views/screens/Practice_Islam_Screens/Shahda_Screens/shahada_page_new_design.dart';
 // import 'package:flutter_quran_api_practice/model/asma_al_husna_model.dart';
 // import 'package:flutter_quran_api_practice/model/audio_arabic_quran_model.dart';
 // import 'package:flutter_quran_api_practice/model/date_conversion_api_model.dart';
@@ -63,7 +82,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_quran_api_practice/views/screens/fetch_user_current_location_main_page.dart';
 import 'package:flutter_quran_api_practice/views/screens/hadith_editions_main_page_design.dart';
 import 'package:flutter_quran_api_practice/views/screens/hadith_main_page_design.dart';
-import 'package:flutter_quran_api_practice/views/screens/home_page_deisgn.dart';
+import 'package:flutter_quran_api_practice/views/screens/Home_Page_Screens/home_page_deisgn.dart';
 import 'package:flutter_quran_api_practice/views/screens/tafsir_e_quran_main_screen.dart';
 import 'package:flutter_quran_api_practice/views/screens/zikar_o_azkar_main_page_design.dart';
 import 'package:geolocator/geolocator.dart';
@@ -79,6 +98,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // 261.94856858859305
+  // 	 : Sunan an-Nasa'i 464
 
   @override
   Widget build(BuildContext context) {
@@ -90,8 +110,21 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+
+      initialRoute: HomePageDesign.pageName,
+      onGenerateRoute: onGenerateRoute,
       debugShowCheckedModeBanner: false,
       // testing ...
+
+      // home: const AsmaUlHusnaMainPageDesign(),
+
+      // home: const TestingPage(),
+      // home: const PrayerIntroductionPage(),
+      // home: const PrayerInTheLightOfQuran(),
+      // home: const PrayerInTheLightOfHadith(),
+      // home: const ObligationsOfPrayerScreen(),
+      // home: const PropheticWayOfPrayer(),
+      // home: const ShahdaPageDesign(),
       // home: const MyHomePage(title: "Urdu"),
       // home: BlocProvider(
       //   create: (context) => ZikarOAzkarBloc(),
@@ -109,27 +142,27 @@ class MyApp extends StatelessWidget {
       //   child: HomePage(),
       // ),
 
-      home: MultiBlocProvider(
-        providers: [
-          BlocProvider(
-            create: (context) => AddressConversionBloc(),
-            child: Container(),
-          ),
-          BlocProvider(
-            create: (context) => UserCurrentLocationBloc(),
-          ),
-          BlocProvider(
-            create: (context) => UpdateCurrentTimeBloc(),
-          ),
-          BlocProvider(
-            create: (context) => AllPrayersTImingsOfSingleDayBloc(),
-          ),
-          BlocProvider(
-            create: (context) => DateConversionBloc(),
-          ),
-        ],
-        child: const HomePageDesign(),
-      ),
+      // home: MultiBlocProvider(
+      //   providers: [
+      //     BlocProvider(
+      //       create: (context) => AddressConversionBloc(),
+      //       child: Container(),
+      //     ),
+      //     BlocProvider(
+      //       create: (context) => UserCurrentLocationBloc(),
+      //     ),
+      //     BlocProvider(
+      //       create: (context) => UpdateCurrentTimeBloc(),
+      //     ),
+      //     BlocProvider(
+      //       create: (context) => AllPrayersTImingsOfSingleDayBloc(),
+      //     ),
+      //     BlocProvider(
+      //       create: (context) => DateConversionBloc(),
+      //     ),
+      //   ],
+      //   child: const HomePageDesign(),
+      // ),
 
       // home: BlocProvider(
       //   create: (context) => UserCurrentLocationBloc(),
@@ -173,6 +206,52 @@ class MyApp extends StatelessWidget {
       //   ],
       //   child: const HadithMainPageDesign(),
       // ),
+    );
+  }
+}
+
+class TestingPage extends StatefulWidget {
+  const TestingPage({super.key});
+
+  @override
+  State<TestingPage> createState() => _TestingPageState();
+}
+
+class _TestingPageState extends State<TestingPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const PracticeIslamMainPageDesign(),
+                  ));
+                },
+                child: const Text("Practice Islam")),
+            // ElevatedButton(
+            //     onPressed: () async {
+            //       final player = AudioPlayer();
+            //       // // final player2 = AudioPlayer();
+
+            //       try {
+            //         // Load the audio file from the asset
+            //         ByteData data =
+            //             await rootBundle.load("assets/second_kalma.mp3");
+            //         // Play the audio file
+            //         await player.play(BytesSource(data.buffer.asUint8List()));
+            //       } catch (e) {
+            //         print("Error playing audio: $e");
+            //       }
+            //     },
+            //     child: Text("Play kalma"))
+          ],
+        ),
+      ),
     );
   }
 }

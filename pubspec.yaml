@@ -68,6 +68,20 @@ flutter:
     - assets/a1.mp3
     - assets/a2.mp3
     - assets/a3.mp3
+    - assets/first_kalam.mp3
+    - assets/second_kalma.mp3
+    - assets/third_kalma.mp3
+    - assets/forth_kalma.mp3
+    - assets/fifth_kalma.mp3
+    - assets/sixth_kalma.mp3
+    - assets/allah_names.mp3
+    - assets/f1.mp3
+    - assets/f2.mp3
+    - assets/f3.mp3
+    - assets/f4.mp3
+    - assets/f5.mp3
+    - assets/f6.mp3
+    - assets/f7.mp3
     - assets/animations/
     - assets/fonts/
     - assets/images/
@@ -101,6 +115,11 @@ flutter:
     - family: Khand
       fonts:
         - asset: assets/fonts/Khand-Regular.ttf
+    - family: Saleem
+      fonts:
+        - asset: assets/fonts/PDMS_Saleem_QuranFont_shipped.ttf
+    # - family : Saleem  assets/fonts/PDMS_Saleem_QuranFont_shipped.ttf
+    #     -  assets
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

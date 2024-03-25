@@ -31,7 +31,7 @@ class HomePageIslamicDateWidget extends StatelessWidget {
           );
         } else if (state is DateConversionErrorState) {
           return const Text(
-            "Error ...",
+            "Network Error ...",
             maxLines: 1,
             style: TextStyle(
                 fontSize: 12,

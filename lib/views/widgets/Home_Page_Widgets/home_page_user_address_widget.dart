@@ -22,7 +22,7 @@ class HomePageUserAddressWidget extends StatelessWidget {
           }
         } else if (state is UserCurrentLocationErrorState) {
           if (kDebugMode) {
-            print("Error ...");
+            print("Network Error ...");
           }
         } else if (state is UserCurrentLocationLoadedState) {
           if (kDebugMode) {
@@ -64,7 +64,7 @@ class HomePageUserAddressWidget extends StatelessWidget {
               );
             } else if (state is AddressConversionErrorState) {
               return const Text(
-                "Error ...",
+                "Network Error ...",
                 maxLines: 1,
                 style: TextStyle(
                     fontSize: 12,
