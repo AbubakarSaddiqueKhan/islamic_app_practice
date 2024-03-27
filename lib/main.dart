@@ -1,6 +1,15 @@
 import 'dart:async';
+import 'dart:convert';
 import 'dart:typed_data';
 import 'dart:math' as math;
+import 'dart:developer' as developer;
+
+/**
+ * 
+ * 
+ * 
+ * 
+ */
 
 //
 // Text(
@@ -17,11 +26,28 @@ import 'dart:math' as math;
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_aa_sajda_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_al_alaq_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_al_araf_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_al_furqan_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_al_hajj_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_al_inshiqaaq_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_al_israa_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_an_nahl_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_an_najm_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_an_naml_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_ar_raad_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_faatiha_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_fussilat_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_maryam_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_saad_simple_arabic_quran_data.dart';
 import 'package:flutter_quran_api_practice/Navigation/on_generate_route.dart';
 import 'package:flutter_quran_api_practice/model/Hadith/all_hadith_editions_model.dart';
 import 'package:flutter_quran_api_practice/model/Hadith/all_hadith_model.dart';
 import 'package:flutter_quran_api_practice/model/Hadith/arabic_lanuage_hadith_detailed_model.dart';
 import 'package:flutter_quran_api_practice/model/Hadith/hadith_edition_data_model.dart';
+import 'package:flutter_quran_api_practice/model/Quran_Updated/simple_quran.dart';
+import 'package:flutter_quran_api_practice/model/Quran_Updated/word_by_word_quran.dart';
 import 'package:flutter_quran_api_practice/model/month_conversion_api_model.dart';
 import 'package:flutter_quran_api_practice/model/prayers_timings_of_single_day.dart';
 import 'package:flutter_quran_api_practice/model/qibla_direction_model.dart';
@@ -44,6 +70,8 @@ import 'package:flutter_quran_api_practice/view_models/Blocs/UserCurrentLocation
 import 'package:flutter_quran_api_practice/view_models/Blocs/ZikarOAzkarBloc/zikar_o_azkar_bloc.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/PrayersTimingsApiService/all_prayers_timmings_of_single_day_api_service.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/QiblaDirectionApiService/qibla_direction_api_service.dart';
+import 'package:flutter_quran_api_practice/view_models/api_service/Quran_Updated_Api_Service/simple_quran_api_service.dart';
+import 'package:flutter_quran_api_practice/view_models/api_service/Quran_Updated_Api_Service/word_by_word_quran_api_service.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/Tafsir_E_Quran_Api_Service/tafsir_e_quran_api_service.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/ZikarOAzkarApiService/zikar_o_azkar_api_service.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/hadith_api_service/all_hadith_api_service.dart';
@@ -94,6 +122,262 @@ void main() {
   runApp(const MyApp());
 }
 
+class TestingData extends StatelessWidget {
+  const TestingData({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            ElevatedButton(
+                onPressed: () {
+                  print("Clicked");
+                  // convertJson();
+                },
+                child: Text("data")),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// class TajweedMark extends StatelessWidget {
+//   final String text;
+
+//   TajweedMark({required this.text});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return TextSpan(
+//       text: text,
+//       style: TextStyle(
+//         backgroundColor: Colors.yellow, // Example background color for Tajweed marks
+//         fontWeight: FontWeight.bold,
+//       ),
+//     );
+//   }
+// }
+
+// class TajweedMark extends StatelessWidget {
+//   final String text;
+
+//   TajweedMark({required this.text});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text(
+//       text,
+//       style: TextStyle(
+//         backgroundColor:
+//             Colors.yellow, // Example background color for Tajweed marks
+//         fontWeight: FontWeight.bold,
+//       ),
+//     );
+//   }
+// }
+
+// class SymbolizedArabicText extends StatelessWidget {
+//   final String arabicText;
+
+//   SymbolizedArabicText({required this.arabicText});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     List<InlineSpan> textSpans = [];
+//     RegExp regex = RegExp(r'\[(.*?)\]');
+//     Iterable<Match> matches = regex.allMatches(arabicText);
+
+//     int index = 0;
+//     for (Match match in matches) {
+//       String symbol = match.group(1)!;
+//       String textBeforeSymbol = arabicText.substring(index, match.start);
+//       textSpans.add(TextSpan(text: textBeforeSymbol));
+//       // Apply specific styling or formatting based on the symbol
+//       if (symbol.startsWith('h:')) {
+//         // Apply emphasis or pause
+//         textSpans.add(TextSpan(
+//           text: arabicText.substring(match.start + 4, match.end),
+//           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.brown),
+//         ));
+//       } else if (symbol.startsWith('n')) {
+//         // Apply elongation
+//         textSpans.add(TextSpan(
+//           text: arabicText.substring(match.start + 3, match.end),
+//           style: TextStyle(fontStyle: FontStyle.italic, color: Colors.pink),
+//         ));
+//       } else if (symbol.startsWith('p')) {
+//         // Apply specific vowel sound
+//         textSpans.add(TextSpan(
+//           text: arabicText.substring(match.start + 3, match.end),
+//           style: TextStyle(color: Colors.red),
+//         ));
+//       } else if (symbol.startsWith('l')) {
+//         // Apply Tajweed marking
+//         textSpans.add(TextSpan(
+//           text: arabicText.substring(match.start + 2, match.end),
+//           style: TextStyle(
+//             backgroundColor:
+//                 Colors.yellow, // Example background color for Tajweed marks
+//             fontWeight: FontWeight.bold,
+//           ),
+//         )
+
+//             //   TajweedMark(
+//             //   text: arabicText.substring(match.start + 2, match.end),
+//             // ) as TextSpan
+//             );
+//       }
+//       index = match.end;
+//     }
+
+//     textSpans.add(TextSpan(text: arabicText.substring(index)));
+
+//     return Directionality(
+//       textDirection: TextDirection.rtl,
+//       child: RichText(
+//         text: TextSpan(children: textSpans),
+//       ),
+//     );
+//   }
+// }
+
+// class SymbolizedArabicText extends StatelessWidget {
+//   final String arabicText;
+
+//   SymbolizedArabicText({required this.arabicText});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     List<InlineSpan> textSpans = [];
+//     RegExp regex = RegExp(r'\[(.*?)\]');
+//     Iterable<Match> matches = regex.allMatches(arabicText);
+
+//     int index = 0;
+//     for (Match match in matches) {
+//       String symbol = match.group(1)!;
+//       String textBeforeSymbol = arabicText.substring(index, match.start);
+//       textSpans.add(TextSpan(text: textBeforeSymbol));
+//       // Apply specific styling or formatting based on the symbol
+//       if (symbol.startsWith('h:')) {
+//         // Apply emphasis or pause
+//         textSpans.add(TextSpan(
+//           text: arabicText.substring(match.start + 4, match.end),
+//           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.amber),
+//         ));
+//       } else if (symbol.startsWith('n')) {
+//         // Apply elongation
+//         textSpans.add(TextSpan(
+//           text: arabicText.substring(match.start + 3, match.end),
+//           style: TextStyle(fontStyle: FontStyle.italic, color: Colors.brown),
+//         ));
+//       } else if (symbol.startsWith('p')) {
+//         // Apply specific vowel sound
+//         textSpans.add(TextSpan(
+//           text: arabicText.substring(match.start + 3, match.end),
+//           style: TextStyle(color: Colors.red),
+//         ));
+//       }
+//       index = match.end;
+//     }
+
+//     textSpans.add(TextSpan(text: arabicText.substring(index)));
+
+//     return Directionality(
+//       textDirection: TextDirection.rtl,
+//       child: RichText(
+//         text: TextSpan(children: textSpans),
+//       ),
+//     );
+//   }
+// }
+
+class MyTest extends StatelessWidget {
+  const MyTest({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    void convertJson(String json) {
+      print("Enter ..............");
+      String jsonString = '''
+      $json
+    ''';
+
+      dynamic words = jsonDecode(jsonString);
+
+      List<dynamic> arabicWords =
+          words.map((word) => word['word_arabic']).toList() as dynamic;
+
+      List<dynamic> engWords =
+          words.map((word) => word['word_transliteration']).toList() as dynamic;
+
+      List<dynamic> urdWords =
+          words.map((word) => word['word_translation']).toList() as dynamic;
+
+      print(arabicWords);
+
+      print("Exit ..............");
+      developer.log(arabicWords.toString());
+      developer.log(engWords.toString());
+      developer.log(urdWords.toString());
+    }
+
+    void checkLocalData() {
+      SimpleArabicQuranModel simpleArabicQuranModel =
+          SimpleArabicQuranModel.fromJson(SurahAlAlaq.surahAlAlaqJsonData);
+
+      developer.log(simpleArabicQuranModel.data.name);
+      // developer.log(simpleArabicQuranModel.data.ayahs[0].text);
+      // developer.log(simpleArabicQuranModel.data.ayahs[1].text);
+      // developer.log(simpleArabicQuranModel.data.ayahs[2].text);
+      // developer.log(simpleArabicQuranModel.data.ayahs[3].text);
+      // developer.log(simpleArabicQuranModel.data.ayahs[4].text);
+      // developer.log(simpleArabicQuranModel.data.ayahs[5].text);
+
+      // developer.log(simpleArabicQuranModel.data.ayahs[6].text);
+    }
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Test"),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            ElevatedButton(
+                onPressed: () async {
+                  checkLocalData();
+                  // SimpleArabicQuranApiService simpleArabicQuranApiService =
+                  //     SimpleArabicQuranApiService();
+                  // SimpleArabicQuranModel arabicQuranModel =
+                  //     await simpleArabicQuranApiService
+                  //         .fetchSimpleQuranDataOfGivenSurah(surahNumber: 2);
+
+                  // developer.log(arabicQuranModel.data.ayahs[284].text);
+                  // developer.log(arabicQuranModel.data.ayahs[285].text);
+
+                  // WordByWordQuranApiService wordByWordQuranApiService =
+                  //     WordByWordQuranApiService();
+                  // WordByWordQuranModel wordByWordQuranModel =
+                  //     await wordByWordQuranApiService
+                  //         .fetchWordByWordDetailOfQuranData(surahNumber: 2);
+                  // print("Fome.............");
+                  // // developer.log(wordByWordQuranModel.data.ayahs[1].text);
+                  // convertJson(wordByWordQuranModel.data.ayahs[284].text);
+                  // // convertJson();
+                  // developer.log("Foneeeee..............");
+                },
+                child: Text("data"))
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -114,6 +398,8 @@ class MyApp extends StatelessWidget {
       initialRoute: HomePageDesign.pageName,
       onGenerateRoute: onGenerateRoute,
       debugShowCheckedModeBanner: false,
+
+      // home: MyTest(),
       // testing ...
 
       // home: const AsmaUlHusnaMainPageDesign(),

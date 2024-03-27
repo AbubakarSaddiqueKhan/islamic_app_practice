@@ -235,7 +235,26 @@ List<PropheticWayOfPrayerModel> takbirETahreemaHadithList =
 ///
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////
-////
+
+List<PropheticWayOfPrayerModel> hadithOnClaspingHandInPrayerDataList =
+    <PropheticWayOfPrayerModel>[
+  PropheticWayOfPrayerModel(
+      id: 1,
+      arabicText:
+          "حَدَّثَنَا زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا عَفَّانُ، حَدَّثَنَا هَمَّامٌ، حَدَّثَنَا مُحَمَّدُ بْنُ جُحَادَةَ، حَدَّثَنِي عَبْدُ الْجَبَّارِ بْنُ وَائِلٍ، عَنْ عَلْقَمَةَ بْنِ وَائِلٍ، وَمَوْلًى، لَهُمْ أَنَّهُمَا حَدَّثَاهُ عَنْ أَبِيهِ، وَائِلِ بْنِ حُجْرٍ، أَنَّهُ رَأَى النَّبِيَّ صلى الله عليه وسلم رَفَعَ يَدَيْهِ حِينَ دَخَلَ فِي الصَّلاَةِ كَبَّرَ - وَصَفَ هَمَّامٌ حِيَالَ أُذُنَيْهِ - ثُمَّ الْتَحَفَ بِثَوْبِهِ ثُمَّ وَضَعَ يَدَهُ الْيُمْنَى عَلَى الْيُسْرَى فَلَمَّا أَرَادَ أَنْ يَرْكَعَ أَخْرَجَ يَدَيْهِ مِنَ الثَّوْبِ ثُمَّ رَفَعَهُمَا ثُمَّ كَبَّرَ فَرَكَعَ فَلَمَّا قَالَ \" سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ \" رَفَعَ يَدَيْهِ فَلَمَّا سَجَدَ سَجَدَ بَيْنَ كَفَّيْهِ ‏.‏",
+      urduText:
+          " وائل ب۔ حجر نے بیان کیا:اس نے رسول اللہ صلی اللہ علیہ وسلم کو دیکھا کہ نماز شروع کرتے وقت ہاتھ اٹھاتے اور تکبیر کہتے اور حمام (راوی) کے مطابق ہاتھ کانوں کے بالمقابل اٹھاتے۔ اس کے بعد آپ صلی اللہ علیہ وسلم نے اپنے دونوں ہاتھ اپنے کپڑے میں لپیٹ لیے اور اپنا دایاں ہاتھ بائیں ہاتھ پر رکھا۔ اور جب رکوع کرنے لگے تو اپنے ہاتھ کپڑے سے نکالے، پھر انہیں اٹھائے، پھر تکبیر کہی اور رکوع کیا، پھر جب (وہ کھڑا ہوا) تو یہ پڑھا: اللہ نے اس کی سن لی۔ جس نے اس کی تعریف کی۔ \" اور جب سجدہ کیا تو اپنی دونوں ہتھیلیوں کے درمیان سجدہ کیا۔",
+      englishText:
+          "Wa'il b. Hujr reported:He saw the Messenger of Allah (ﷺ) raising his hands at the time of beginning the prayer and reciting takbir, and according to Hammam (the narrator), the hands were lifted opposite to ears. He (the Holy Prophet) then wrapped his hands in his cloth and placed his right hand over his left hand. And when he was about to bow down, he brought out his hands from the cloth, and then lifted them, and then recited takbir and bowed down, and when (he came back to the erect position) he recited:\" Allah listened to him who praised Him.\" And when he prostrated, he prostrated between his two palms.",
+      reference: "Sahih Muslim 401"),
+  // PropheticWayOfPrayerModel(
+  //     id: 1,
+  //     arabicText: arabicText,
+  //     urduText: urduText,
+  //     englishText: englishText,
+  //     reference: reference)
+];
+
 ///
 ///
 /////
@@ -282,196 +301,6 @@ List<PropheticWayOfPrayerModel> propheticWayOfPrayerDataList =
       englishText:
           "Narrated Malik:We came to the Prophet (ﷺ) and stayed with him for twenty days and nights. We were all young and of about the same age. The Prophet (ﷺ) was very kind and merciful. When he realized our longing for our families, he asked about our homes and the people there and we told him. Then he asked us to go back to our families and stay with them and teach them (the religion) and to order them to do good things. He also mentioned some other things which I have (remembered or [??] ) forgotten. The Prophet (ﷺ) then added, \"Pray as you have seen me praying and when it is the time for the prayer one of you should pronounce the Adhan and the oldest of you should lead the prayer.",
       reference: " Sahih al-Bukhari 631"),
-
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  ///////////////////////////////////////////////////// Takbeer e tahreema .  ////////////////////////////////////////////////
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  ////////////////////////////////////////////////////////////// Muslim  ////////////////////////////////////////////////////
-
-  PropheticWayOfPrayerModel(
-      id: 3,
-      arabicText:
-          "حَدَّثَنِي مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا حُجَيْنٌ، - وَهُوَ ابْنُ الْمُثَنَّى - حَدَّثَنَا اللَّيْثُ، عَنْ عُقَيْلٍ، ح وَحَدَّثَنِي مُحَمَّدُ بْنُ عَبْدِ اللَّهِ بْنِ قُهْزَاذَ، حَدَّثَنَا سَلَمَةُ بْنُ سُلَيْمَانَ، أَخْبَرَنَا يُونُسُ، كِلاَهُمَا عَنِ الزُّهْرِيِّ، بِهَذَا الإِسْنَادِ كَمَا قَالَ ابْنُ جُرَيْجٍ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم إِذَا قَامَ لِلصَّلاَةِ رَفَعَ يَدَيْهِ حَتَّى تَكُونَا حَذْوَ مَنْكِبَيْهِ ثُمَّ كَبَّرَ ",
-      urduText:
-          "یہ حدیث اسی سلسلہ کی سند کے ساتھ ال نے نقل کی ہے۔ زہری جیسا کہ ابن جریج نے روایت کیا ہے۔ رسول اللہ صلی اللہ علیہ وسلم جب نماز کے لیے کھڑے ہوتے تو دونوں ہاتھ کندھوں پر اٹھاتے اور پھر تکبیر پڑھتے۔",
-      englishText:
-          "This hadith has been transmitted with the same chain of transmitters by al. Zuhri as narrated by Ibn Juraij (who) said. When the Messenger of Allah (ﷺ) stood up for prayer, he raised hands (to the height) apposite the shoulders and then recited takbir.",
-      reference: "Sahih Muslim 390 - C"),
-
-  PropheticWayOfPrayerModel(
-      id: 2,
-      arabicText:
-          "حَدَّثَنِي مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا ابْنُ جُرَيْجٍ، حَدَّثَنِي ابْنُ شِهَابٍ، عَنْ سَالِمِ بْنِ عَبْدِ اللَّهِ، أَنَّ ابْنَ عُمَرَ، قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم إِذَا قَامَ لِلصَّلاَةِ رَفَعَ يَدَيْهِ حَتَّى تَكُونَا حَذْوَ مَنْكِبَيْهِ ثُمَّ كَبَّرَ فَإِذَا أَرَادَ أَنْ يَرْكَعَ فَعَلَ مِثْلَ ذَلِكَ وَإِذَا رَفَعَ مِنَ الرُّكُوعِ فَعَلَ مِثْلَ ذَلِكَ وَلاَ يَفْعَلُهُ حِينَ يَرْفَعُ رَأْسَهُ مِنَ السُّجُودِ ‏.‏",
-      urduText:
-          "ابن عمر رضی اللہ عنہما کہتے ہیں کہ رسول اللہ صلی اللہ علیہ وسلم جب نماز کے لیے کھڑے ہوتے تو اپنے دونوں ہاتھ کندھوں پر اٹھاتے، پھر تکبیر کہتے، اور جب رکوع کرنے لگتے تو پھر اسی طرح کرتے۔ اور جب رکوع سے اٹھے تو پھر اسے پسند کیا لیکن سجدے سے سر اٹھاتے وقت ایسا نہیں کیا۔",
-      englishText:
-          "Ibn Umar reported that the Messenger of Allah (ﷺ), when he stood up for prayer, used to raise his hands apposite the shoulders and then recited takbir (Allah-o-Akbar), and when he was about to bow he again did like it and when he raised himself from the ruku' (bowing posture) he again did like it, but he did not do it at the time of raising his head from prostration.",
-      reference: "Sahih Muslim 390 - B"),
-
-  PropheticWayOfPrayerModel(
-      id: 5,
-      arabicText:
-          "وَحَدَّثَنَاهُ مُحَمَّدُ بْنُ الْمُثَنَّى، حَدَّثَنَا ابْنُ أَبِي عَدِيٍّ، عَنْ سَعِيدٍ، عَنْ قَتَادَةَ، بِهَذَا الإِسْنَادِ أَنَّهُ رَأَى نَبِيَّ اللَّهِ صلى الله عليه وسلم وَقَالَ حَتَّى يُحَاذِيَ بِهِمَا فُرُوعَ أُذُنَيْهِ ",
-      urduText:
-          "اس حدیث کو قتادہ نے اسی سلسلہ سے روایت کیا ہے کہ انہوں نے رسول اللہ صلی اللہ علیہ وسلم کو ایسا کرتے ہوئے دیکھا (یعنی ہاتھ اٹھائے) یہاں تک کہ وہ کانوں کی لو کے مخالف تھے۔",
-      englishText:
-          "This hadith has been transmitted by Qatada with the same chain of transmitters that he saw the Messenger of Allah (ﷺ) doing this (i.e. raising his hands) till they were opposite the lobes of ears",
-      reference: "Sahih Muslim 391 - C"),
-
-  PropheticWayOfPrayerModel(
-      id: 6,
-      arabicText:
-          "وَحَدَّثَنَا يَحْيَى بْنُ يَحْيَى، قَالَ قَرَأْتُ عَلَى مَالِكٍ عَنِ ابْنِ شِهَابٍ، عَنْ أَبِي سَلَمَةَ بْنِ عَبْدِ الرَّحْمَنِ، أَنَّ أَبَا هُرَيْرَةَ، كَانَ يُصَلِّي لَهُمْ فَيُكَبِّرُ كُلَّمَا خَفَضَ وَرَفَعَ فَلَمَّا انْصَرَفَ قَالَ وَاللَّهِ إِنِّي لأَشْبَهُكُمْ صَلاَةً بِرَسُولِ اللَّهِ صلى الله عليه وسلم ",
-      urduText:
-          "ابو سلمہ نے بیان کیا:ابوہریرہ رضی اللہ عنہ نے ان کے لیے نماز پڑھائی اور رکوع و سجود میں جھکتے اور کھڑے ہونے پر تکبیر پڑھی اور نماز سے فارغ ہونے کے بعد فرمایا: اللہ کی قسم میں نماز کہتا ہوں جو رسول اللہ صلی اللہ علیہ وسلم کی نماز کے ساتھ بہترین مشابہت رکھتی ہے۔ ) آپ کے درمیان۔",
-      englishText:
-          "Abu Salama reported:Abu Huraira led prayer for them and recited takbir when he bent and raised himself (in ruku' and sujud) and after completing (the prayer) he said: By Allah I say prayer which has the best resemblance with the prayer of the Prophet (ﷺ) amongst you.",
-      reference: "Sahih Muslim 392 - A"),
-
-  PropheticWayOfPrayerModel(
-      id: 7,
-      arabicText:
-          "حَدَّثَنَا مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا ابْنُ جُرَيْجٍ، أَخْبَرَنِي ابْنُ شِهَابٍ، عَنْ أَبِي بَكْرِ بْنِ عَبْدِ الرَّحْمَنِ، أَنَّهُ سَمِعَ أَبَا هُرَيْرَةَ، يَقُولُ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم إِذَا قَامَ إِلَى الصَّلاَةِ يُكَبِّرُ حِينَ يَقُومُ ثُمَّ يُكَبِّرُ حِينَ يَرْكَعُ ثُمَّ يَقُولُ \" سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ \" حِينَ يَرْفَعُ صُلْبَهُ مِنَ الرُّكُوعِ ثُمَّ يَقُولُ وَهُوَ قَائِمٌ \" رَبَّنَا وَلَكَ الْحَمْدُ \" ثُمَّ يُكَبِّرُ حِينَ يَهْوِي سَاجِدًا ثُمَّ يُكَبِّرُ حِينَ يَرْفَعُ رَأْسَهُ ثُمَّ يُكَبِّرُ حِينَ يَسْجُدُ ثُمَّ يُكَبِّرُ حِينَ يَرْفَعُ رَأْسَهُ ثُمَّ يَفْعَلُ مِثْلَ ذَلِكَ فِي الصَّلاَةِ كُلِّهَا حَتَّى يَقْضِيَهَا وَيُكَبِّرُ حِينَ يَقُومُ مِنَ الْمَثْنَى بَعْدَ الْجُلُوسِ ثُمَّ يَقُولُ أَبُو هُرَيْرَةَ إِنِّي لأَشْبَهُكُمْ صَلاَةً بِرَسُولِ اللَّهِ صلى الله عليه وسلم ‏.‏",
-      urduText:
-          "ابوہریرہ نے بیان کیا:رسول اللہ صلی اللہ علیہ وسلم جب نماز کے لیے اٹھتے تو کھڑے ہوتے وقت اللہ اکبر کہتے، پھر رکوع کرتے وقت تکبیر کہتے۔ پھر کہو: \"اللہ نے اس کی سن لی جس نے اس کی تعریف کی\" جب رکوع کے بعد کھڑے ہو جاؤ، پھر کھڑے ہو کر کہو: \"اے ہمارے رب، تیری حمد ہے\"، پھر سجدے کے لیے اترتے وقت تکبیر کہے۔ سر اٹھانے پر تکبیر کہے، پھر سجدہ کرتے وقت تکبیر کہے، پھر سر اٹھانے پر تکبیر کہے۔ وہ پوری نماز میں اس طرح کرتے یہاں تک کہ اسے مکمل کر لیتے، اور جب بیٹھنے کی حالت اختیار کر کے دو رکعت کے آخر میں اٹھتے تو تکبیر کہتے۔ ابوہریرہ رضی اللہ عنہ نے کہا: میری نماز تم میں رسول اللہ صلی اللہ علیہ وسلم کی نماز کے ساتھ بہترین مشابہت رکھتی ہے۔",
-      englishText:
-          "Abu Huraira reported:When the Messenger of Allah (ﷺ) got up for prayer, he would say the takbir (Allah-o-Akbar) when standing, then say the takbir when bowing. then say:\" Allah listened to him who praised him,\" when coming to the erect position after bowing, then say while standing:\" To Thee, our Lord, be the praise\", then recite the takbir when getting down for prostration, then say the takbir on raising his head, then say the takbir on prostrating himself, then say the takbir on raising his head. He would do that throughout the whole prayer till he would complete it, and he would say the takbir when he would get up at the end of two rak'as after adopting the sitting posture. Abu Huraira said: My prayer has the best resemblance amongst you with the prayer of the Messenger of Allah (ﷺ).",
-      reference: "Sahih Muslim 392 - B / C"),
-  PropheticWayOfPrayerModel(
-      id: 8,
-      arabicText:
-          "حَدَّثَنَا مُحَمَّدُ بْنُ مِهْرَانَ الرَّازِيُّ، حَدَّثَنَا الْوَلِيدُ بْنُ مُسْلِمٍ، حَدَّثَنَا الأَوْزَاعِيُّ، عَنْ يَحْيَى بْنِ أَبِي كَثِيرٍ، عَنْ أَبِي سَلَمَةَ، أَنَّ أَبَا هُرَيْرَةَ، كَانَ يُكَبِّرُ فِي الصَّلاَةِ كُلَّمَا رَفَعَ وَوَضَعَ . فَقُلْنَا يَا أَبَا هُرَيْرَةَ مَا هَذَا التَّكْبِيرُ قَالَ إِنَّهَا لَصَلاَةُ رَسُولِ اللَّهِ صلى الله عليه وسلم ",
-      urduText:
-          "ابو سلمہ رضی اللہ عنہ سے روایت ہے کہ ابوہریرہ رضی اللہ عنہ نماز میں اٹھنے اور گھٹنے کے تمام مواقع پر تکبیر پڑھتے تھے۔ ہم نے کہا:اے ابوہریرہ یہ تکبیر کیا ہے؟ اس نے کہا: بے شک یہ رسول اللہ صلی اللہ علیہ وسلم کی دعا ہے۔",
-      englishText:
-          "Abu Salama reported that Abu Huraira recited takbir in prayer on all occasions of rising and kneeling. We said:O Abu Huraira, what is this takbir? He said: Verily it is the prayer of the Messenger of Allah (ﷺ).",
-      reference: "Sahih Muslim 392 - E"),
-
-  PropheticWayOfPrayerModel(
-      id: 9,
-      arabicText:
-          "حَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، حَدَّثَنَا يَعْقُوبُ، - يَعْنِي ابْنَ عَبْدِ الرَّحْمَنِ - عَنْ سُهَيْلٍ، عَنْ أَبِيهِ، عَنْ أَبِي هُرَيْرَةَ، أَنَّهُ كَانَ يُكَبِّرُ كُلَّمَا خَفَضَ وَرَفَعَ وَيُحَدِّثُ أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم كَانَ يَفْعَلُ ذَلِكَ ‏.‏",
-      urduText:
-          "سہیل نے اپنے والد سے روایت کی ہے کہ ابوہریرہ رضی اللہ عنہ (نماز میں) اٹھنے اور جھکنے کے تمام مواقع پر تکبیر کہتے تھے اور بیان کیا کہ رسول اللہ صلی اللہ علیہ وسلم ایسا کیا کرتے تھے۔",
-      englishText:
-          "Suhail reported on the authority of his father that Abu Huraira used to recite takbir on all occasions of rising and bending (in prayer) and narrated that the Messenger of Allah (ﷺ) used to do like that.",
-      reference: "Sahih Muslim 392 - F"),
-
-  PropheticWayOfPrayerModel(
-      id: 10,
-      arabicText:
-          "حَدَّثَنَا يَحْيَى بْنُ يَحْيَى، وَخَلَفُ بْنُ هِشَامٍ، جَمِيعًا عَنْ حَمَّادٍ، - قَالَ يَحْيَى أَخْبَرَنَا حَمَّادُ بْنُ زَيْدٍ، - عَنْ غَيْلاَنَ، عَنْ مُطَرِّفٍ، قَالَ صَلَّيْتُ أَنَا وَعِمْرَانُ بْنُ حُصَيْنٍ، خَلْفَ عَلِيِّ بْنِ أَبِي طَالِبٍ فَكَانَ إِذَا سَجَدَ كَبَّرَ وَإِذَا رَفَعَ رَأْسَهُ كَبَّرَ وَإِذَا نَهَضَ مِنَ الرَّكْعَتَيْنِ كَبَّرَ فَلَمَّا انْصَرَفْنَا مِنَ الصَّلاَةِ - قَالَ - أَخَذَ عِمْرَانُ بِيَدِي ثُمَّ قَالَ لَقَدْ صَلَّى بِنَا هَذَا صَلاَةَ مُحَمَّدٍ صلى الله عليه وسلم . أَوْ قَالَ قَدْ ذَكَّرَنِي هَذَا صَلاَةَ مُحَمَّدٍ صلى الله عليه وسلم ",
-      urduText:
-          "Mutarrif نے رپورٹ کیا:میں اور عمران بی۔ حسین نے علی کے پیچھے نماز پڑھی۔ ابو، طالب۔ اس نے سجدہ کرتے وقت تکبیر کہی اور جب سر اٹھایا تو تکبیر کہی اور (دو رکعت کے آخر میں بیٹھنے کی جگہ سے) اٹھتے ہوئے تکبیر کہی۔ جب ہم نماز سے فارغ ہوئے تو عمران نے میرا ہاتھ پکڑ کر کہا: اس نے (حضرت علی) نے محمد (صلی اللہ علیہ وآلہ وسلم) کی طرح نماز پڑھائی ہے یا فرمایا: درحقیقت اس نے میرے ذہن میں محمد (صلی اللہ علیہ وآلہ وسلم) کی نماز یاد کرائی ہے۔ وہ۔)",
-      englishText:
-          "Mutarrif reported:I and 'Imran b. Husain said prayer behind 'Ali b. Abu, Talib. He recited takbir when he prostrated, and he recited takbir when he raised his head and he recited takbir while rising up (from the sitting position at the end of two rak'ahs). When we had finished our prayer, 'Imran caught hold of my hand and said: He (Hadrat Ali) has led prayer like Muhammad (ﷺ) or he said: He in fact recalled to my mind the prayer of Muhammad (may peace be upon him.)",
-      reference: " Sahih Muslim 393"),
-
-  ////////////////////////////////////////////////////////////// Bukhari  ////////////////////////////////////////////////////
-
-//              there is no hadith on takbir in bukhari .
-
-  ////////////////////////////////////////////////////////////// ibn Majah  ////////////////////////////////////////////////////
-
-  PropheticWayOfPrayerModel(
-      id: 11,
-      arabicText:
-          "حَدَّثَنَا عَلِيُّ بْنُ مُحَمَّدٍ الطَّنَافِسِيُّ، حَدَّثَنَا أَبُو أُسَامَةَ، حَدَّثَنِي عَبْدُ الْحَمِيدِ بْنُ جَعْفَرٍ، حَدَّثَنَا مُحَمَّدُ بْنُ عَمْرِو بْنِ عَطَاءٍ، قَالَ سَمِعْتُ أَبَا حُمَيْدٍ السَّاعِدِيَّ، يَقُولُ كَانَ رَسُولُ اللَّهِ ـ صلى الله عليه وسلم ـ إِذَا قَامَ إِلَى الصَّلَاةِ اسْتَقْبَلَ الْقِبْلَةَ وَرَفَعَ يَدَيْهِ وَقَالَ \" اللَّهُ أَكْبَرُ \"",
-      urduText:
-          "محمد بن عمرو بن عطاء نے کہا:میں نے ابوحمید السعدی رضی اللہ عنہ کو کہتے سنا: جب رسول اللہ صلی اللہ علیہ وسلم نماز کے لیے کھڑے ہوتے تو نماز کی طرف منہ کرتے، ہاتھ اٹھاتے اور کہتے: اللہ اکبر (اللہ اکبر)۔ \"",
-      englishText:
-          "Muhammad bin ‘Amr bin ‘Ata’ said:“I heard Abu Humaid As-Sa’idi say: ‘When the Messenger of Allah (ﷺ) stood up for prayer, he would face the prayer direction, raise his hands, and say: “Allahu Akbar (Allah is Most Great).”",
-      reference: "Sunan Ibn Majah 803"),
-
-  //////////////////////////////////////////////////// Abu dawood  /////////////////////////////////////////////////////////
-
-  PropheticWayOfPrayerModel(
-      id: 12,
-      arabicText:
-          "حَدَّثَنَا ابْنُ مُعَاذٍ، حَدَّثَنَا خَالِدُ بْنُ الْحَارِثِ، حَدَّثَنَا حَاتِمٌ، - يَعْنِي ابْنَ أَبِي صَغِيرَةَ - عَنْ سِمَاكٍ، قَالَ سَمِعْتُ النُّعْمَانَ بْنَ بَشِيرٍ، قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم يُسَوِّي صُفُوفَنَا إِذَا قُمْنَا لِلصَّلاَةِ فَإِذَا اسْتَوَيْنَا كَبَّرَ ‏.‏",
-      urduText:
-          "نعمان بن بشیر رضی اللہ عنہ روایت کرتے ہیں:رسول اللہ صلی اللہ علیہ وسلم جب ہم نماز کے لیے کھڑے ہوتے تو ہماری صفیں سیدھی کرتے، اور جب ہم سیدھے ہوتے تو فرماتے: اللہ سب سے بڑا (تکبیر) ہے۔",
-      englishText:
-          "Narrated An-Nu'man ibn Bashir:The Messenger of Allah (ﷺ) used to straighten our rows when we stood up to pray, and when we were straight, he said: Allah is most great (takbir).",
-      reference: "Sunan Abi Dawud 665"),
-  PropheticWayOfPrayerModel(
-      id: 13,
-      arabicText:
-          "حَدَّثَنَا مُسَدَّدٌ، حَدَّثَنَا يَزِيدُ، - يَعْنِي ابْنَ زُرَيْعٍ - حَدَّثَنَا الْمَسْعُودِيُّ، حَدَّثَنِي عَبْدُ الْجَبَّارِ بْنُ وَائِلٍ، حَدَّثَنِي أَهْلُ، بَيْتِي عَنْ أَبِي أَنَّهُ، حَدَّثَهُمْ أَنَّهُ، رَأَى رَسُولَ اللَّهِ صلى الله عليه وسلم يَرْفَعُ يَدَيْهِ مَعَ التَّكْبِيرَةِ ",
-      urduText:
-          "وائل بن حجر رضی اللہ عنہ کہتے ہیں کہ میں نے رسول اللہ صلی اللہ علیہ وسلم کو تکبیر کہتے وقت اپنے ہاتھ اٹھاتے دیکھا۔",
-      englishText:
-          "Wa’il b.Hujr said that he saw the Messenger of Allah(ﷺ) raise his hands when he uttered the takbir (Allah is most great).",
-      reference: " Sunan Abi Dawud 725"),
-  PropheticWayOfPrayerModel(
-      id: 14,
-      arabicText:
-          "حَدَّثَنَا عُثْمَانُ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا شَرِيكٌ، عَنْ عَاصِمِ بْنِ كُلَيْبٍ، عَنْ أَبِيهِ، عَنْ وَائِلِ بْنِ حُجْرٍ، قَالَ رَأَيْتُ النَّبِيَّ صلى الله عليه وسلم حِينَ افْتَتَحَ الصَّلاَةَ رَفَعَ يَدَيْهِ حِيَالَ أُذُنَيْهِ - قَالَ - ثُمَّ أَتَيْتُهُمْ فَرَأَيْتُهُمْ يَرْفَعُونَ أَيْدِيَهُمْ إِلَى صُدُورِهُمْ فِي افْتِتَاحِ الصَّلاَةِ وَعَلَيْهِمْ بَرَانِسُ وَأَكْسِيَةٌ ",
-      urduText:
-          "وائل بن حجر کہتے ہیں:میں نے دیکھا کہ رسول اللہ صلی اللہ علیہ وسلم جب نماز شروع کرتے تو اپنے ہاتھ کانوں کے سامنے اٹھاتے۔ میں پھر واپس آیا اور دیکھا کہ جب وہ نماز پڑھنے لگے تو اپنے ہاتھ اپنے سینے تک اٹھائے ہوئے ہیں۔ انہوں نے لمبی ٹوپیاں اور کمبل پہن رکھے تھے۔",
-      englishText:
-          "Narrated Wa'il ibn Hujr:I witnessed the Prophet (ﷺ) raise his hands in front of his ears when he began to pray. I then came back and saw them (the people) raising their hands up to their chest when they began to pray. They wore long caps and blankets.",
-      reference: " Sunan Abi Dawud 728"),
-
-  PropheticWayOfPrayerModel(
-      id: 16,
-      arabicText:
-          "حَدَّثَنَا مُسَدَّدٌ، حَدَّثَنَا يَحْيَى، عَنِ ابْنِ أَبِي ذِئْبٍ، عَنْ سَعِيدِ بْنِ سَمْعَانَ، عَنْ أَبِي هُرَيْرَةَ، قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم إِذَا دَخَلَ فِي الصَّلاَةِ رَفَعَ يَدَيْهِ مَدًّا ‏.‏",
-      urduText:
-          "ابوہریرہ رضی اللہ عنہ روایت کرتے ہیں:جب رسول اللہ صلی اللہ علیہ وسلم نے نماز شروع کی تو اپنے دونوں ہاتھ بڑے زور سے اٹھائے۔",
-      englishText:
-          "Narrated AbuHurayrah:When the Messenger of Allah (ﷺ) began his prayer, he raised his hands extensively.",
-      reference: "Sunan Abi Dawud 753"),
-
-  PropheticWayOfPrayerModel(
-      id: 17,
-      arabicText:
-          "حَدَّثَنَا سُلَيْمَانُ بْنُ حَرْبٍ، حَدَّثَنَا حَمَّادٌ، عَنْ غَيْلاَنَ بْنِ جَرِيرٍ، عَنْ مُطَرِّفٍ، قَالَ صَلَّيْتُ أَنَا وَعِمْرَانُ بْنُ حُصَيْنٍ، خَلْفَ عَلِيِّ بْنِ أَبِي طَالِبٍ - رضى الله عنه - فَكَانَ إِذَا سَجَدَ كَبَّرَ وَإِذَا رَكَعَ كَبَّرَ وَإِذَا نَهَضَ مِنَ الرَّكْعَتَيْنِ كَبَّرَ فَلَمَّا انْصَرَفْنَا أَخَذَ عِمْرَانُ بِيَدِي وَقَالَ لَقَدْ صَلَّى هَذَا قِبَلَ أَوْ قَالَ لَقَدْ صَلَّى بِنَا هَذَا قِبَلَ صَلاَةِ مُحَمَّدٍ صلى الله عليه وسلم ‏.‏",
-      urduText:
-          "مطرف نے کہا:میں اور عمران بی۔ حسین نے سب کے پیچھے نماز پڑھی۔ ابی طالب رضی اللہ عنہ۔ جب سجدہ کیا تو تکبیر کہی (اللہ سب سے بڑا ہے) اور جب رکوع کیا تو تکبیر کہی اور جب دو رکعتوں کے آخر میں کھڑے ہوئے تو تکبیر کہی۔ جب ہم اپنی نماز سے فارغ ہوئے تو عمران نے میرا ہاتھ پکڑا اور کہا: اس نے ابھی ہماری نماز اسی طرح پڑھائی ہے جس طرح محمد صلی اللہ علیہ وسلم نے پڑھی تھی۔",
-      englishText:
-          "Mutarrif said:I and ‘Imran b. Husain offered prayer behind ‘All b. AbI Talib(may Allah be pleased with him). When he prostrated, he uttered the takbir (Allah is most great) and when he bowed, he uttered the takbir and when he stood up at the end of two rak’ahs, he uttered the takbir. When we finished our prayer, ‘Imran caught hold of my hand, and said: He has led us in prayer just now like the prayer offered by Muhammed(may peace by upon him).",
-      reference: "Sunan Abi Dawud 835"),
-
-  PropheticWayOfPrayerModel(
-      id: 18,
-      arabicText:
-          "حَدَّثَنَا عَمْرُو بْنُ عُثْمَانَ، حَدَّثَنَا أَبِي وَبَقِيَّةُ، عَنْ شُعَيْبٍ، عَنِ الزُّهْرِيِّ، قَالَ أَخْبَرَنِي أَبُو بَكْرِ بْنُ عَبْدِ الرَّحْمَنِ، وَأَبُو سَلَمَةَ أَنَّ أَبَا هُرَيْرَةَ، كَانَ يُكَبِّرُ فِي كُلِّ صَلاَةٍ مِنَ الْمَكْتُوبَةِ وَغَيْرِهَا يُكَبِّرُ حِينَ يَقُومُ ثُمَّ يُكَبِّرُ حِينَ يَرْكَعُ ثُمَّ يَقُولُ سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ ثُمَّ يَقُولُ رَبَّنَا وَلَكَ الْحَمْدُ قَبْلَ أَنْ يَسْجُدَ ثُمَّ يَقُولُ اللَّهُ أَكْبَرُ حِينَ يَهْوِي سَاجِدًا ثُمَّ يُكَبِّرُ حِينَ يَرْفَعُ رَأْسَهُ ثُمَّ يُكَبِّرُ حِينَ يَسْجُدُ ثُمَّ يُكَبِّرُ حِينَ يَرْفَعُ رَأْسَهُ ثُمَّ يُكَبِّرُ حِينَ يَقُومُ مِنَ الْجُلُوسِ فِي اثْنَتَيْنِ فَيَفْعَلُ ذَلِكَ فِي كُلِّ رَكْعَةٍ حَتَّى يَفْرُغَ مِنَ الصَّلاَةِ ثُمَّ يَقُولُ حِينَ يَنْصَرِفُ وَالَّذِي نَفْسِي بِيَدِهِ إِنِّي لأَقْرَبُكُمْ شَبَهًا بِصَلاَةِ رَسُولِ اللَّهِ صلى الله عليه وسلم إِنْ كَانَتْ هَذِهِ لَصَلاَتُهُ حَتَّى فَارَقَ الدُّنْيَا ‏.‏ قَالَ أَبُو دَاوُدَ هَذَا الْكَلاَمُ الأَخِيرُ يَجْعَلُهُ مَالِكٌ وَالزُّبَيْدِيُّ وَغَيْرُهُمَا عَنِ الزُّهْرِيِّ عَنْ عَلِيِّ بْنِ حُسَيْنٍ وَوَافَقَ عَبْدُ الأَعْلَى عَنْ مَعْمَرٍ شُعَيْبَ بْنَ أَبِي حَمْزَةَ عَنِ الزُّهْرِيِّ ‏.‏",
-      urduText:
-          "ابوبکر ب۔ عبدالرحمٰن اور ابو سلمہ نے کہا:ابوہریرہ رضی اللہ عنہ ہر نماز میں تکبیر کہتے، خواہ فرض ہو یا غیر فرض، جب کھڑے ہوتے تو تکبیر کہتے، اور رکوع کرتے وقت تکبیر کہتے، پھر کہتے: اللہ اس کی سنتا ہے جو اس کی حمد کرتا ہے۔ ; پھر سجدہ کرنے سے پہلے کہتا۔ \"اے ہمارے رب، تیری حمد ہو\"؛ پھر سجدے میں گرتے ہوئے کہتا: \"اللہ سب سے بڑا ہے\"۔ پھر جب سجدہ کے بعد سر اٹھاتا تو تکبیر کہتا، پھر سجدہ کرتے وقت تکبیر کہتا، اور جب بیٹھنے کے بعد دو رکعت کے آخر میں کھڑا ہوتا تو تکبیر کہتا۔ آپ صلی اللہ علیہ وسلم نماز سے فارغ ہونے تک ہر رکعت میں ایسا کرتے تھے۔ پھر نماز کے آخر میں کہتے: اس ذات کی قسم جس کے ہاتھ میں میری جان ہے، میں ان کی نماز کے معاملے میں رسول اللہ صلی اللہ علیہ وسلم سے زیادہ قریب ہوں۔ ایسی ہی نماز وہ ادا کرتے تھے یہاں تک کہ دنیا سے رخصت ہو گئے۔ابوداؤد کہتے ہیں: مالک، الزبیدی اور دیگر نے روایت کی ہے کہ وہ علی بن حسین رضی اللہ عنہ سے زہری کے آخری الفاظ بناتے ہیں۔ اور اس کی تائید معمر اور شعیب بن عبد العلا کے بیان کردہ ورژن سے ہوتی ہے۔ ابی حمزہ الزہری کی سند پر۔",
-      englishText:
-          "Abu bakr b. ‘Abd al-Rahman and abu Salamah said:Abu Hurairah would utter the takbir in every prayer, whether obligatory or non-obligatory, He would utter the takbir when he stood, and he would utter the takbir when he bowed, then he would say: “Allah listens to him who praises Him”; he then would say before prostrating himself; “ Our Lord, to Thee be praise”; then he would say while falling in prostration: “Allah is most great”; he then would utter the takbir when he raised his head after prostration, and then utter the takbir when he prostrated, and then utter takbir the takbir when he stood up at the end of two rak’ahs after sitting down. He used to do so in every rak’ah until he finished his prayer. Then he would say at the end of the prayer: By Him in Whose hands lies my life, I am closer to the Messenger of Allah(ﷺ) in respect of his prayer. Such was the prayer he used to offer until he departed from the world.Abu Dawud said: Malik, al-Zubaidi and others have narrated so that they form the last words from al-Zuhri on the authority of ‘Ali b, Husain. And this is supported by the version reported by ‘Abd al-A’la from Ma’mar and SHu’aib b. Abi Hamzah on the authority of Al-Zuhri.",
-      reference: "Sunan Abi Dawud 836"),
-
-/////////////////////////////////////////////////// Trimizi    ///////////////////////////////////////////////////////////////
-
-  PropheticWayOfPrayerModel(
-      id: 19,
-      arabicText:
-          "حَدَّثَنَا قُتَيْبَةُ، حَدَّثَنَا أَبُو الأَحْوَصِ، عَنْ أَبِي إِسْحَاقَ، عَنْ عَبْدِ الرَّحْمَنِ بْنِ الأَسْوَدِ، عَنْ عَلْقَمَةَ، وَالأَسْوَدِ، عَنْ عَبْدِ اللَّهِ بْنِ مَسْعُودٍ، قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم يُكَبِّرُ فِي كُلِّ خَفْضٍ وَرَفْعٍ وَقِيَامٍ وَقُعُودٍ وَأَبُو بَكْرٍ وَعُمَرُ ‏.‏ قَالَ وَفِي الْبَابِ عَنْ أَبِي هُرَيْرَةَ وَأَنَسٍ وَابْنِ عُمَرَ وَأَبِي مَالِكٍ الأَشْعَرِيِّ وَأَبِي مُوسَى وَعِمْرَانَ بْنِ حُصَيْنٍ وَوَائِلِ بْنِ حُجْرٍ وَابْنِ عَبَّاسٍ ‏.‏ قَالَ أَبُو عِيسَى حَدِيثُ عَبْدِ اللَّهِ بْنِ مَسْعُودٍ حَدِيثٌ حَسَنٌ صَحِيحٌ ‏.‏ وَالْعَمَلُ عَلَيْهِ عِنْدَ أَصْحَابِ النَّبِيِّ صلى الله عليه وسلم مِنْهُمْ أَبُو بَكْرٍ وَعُمَرُ وَعُثْمَانُ وَعَلِيٌّ وَغَيْرُهُمْ وَمَنْ بَعْدَهُمْ مِنَ التَّابِعِينَ وَعَلَيْهِ عَامَّةُ الْفُقَهَاءِ وَالْعُلَمَاءِ ‏.‏",
-      urduText:
-          "عبداللہ بن مسعود رضی اللہ عنہ نے بیان کیا:\"رسول اللہ صلی اللہ علیہ وسلم ہر نیچے کرنے، اٹھانے، کھڑے ہونے اور بیٹھنے کے لیے تکبیر کہتے، اور (اسی طرح) ابوبکر اور عمر رضی اللہ عنہما بھی۔\"",
-      englishText:
-          "Abdullah bin Mas'ud narrated:\"Allah's Messenger would say the Takbir for every lowering and raising, standing and sitting, and (so did) Abu Bakr and Umar.\"",
-      reference: "Jami` at-Tirmidhi 253"),
-
-  ////
-  ////
-  /////
-  ////
-  ////
-  //////
-  /////
-  ////
-  ///
-  ////
-  //////////////////////////////////////////////////////////// Nasai . /////////////////////////////////////////////////////
-
-  ///  There is no hadith in nasiai on takbir .
-  ///
 
   // /            Last length is 2 + 19 = 21  .
 
@@ -2001,3 +1830,214 @@ List<PropheticWayOfPrayerModel> propheticWayOfPrayerDataList =
 
 
 // Prohibition
+
+
+
+
+// ////////////////////////////////////  Old Code ///////////////////////////////////////////////////////////////
+
+// .
+// //
+// /
+// /
+// /
+// /
+
+
+// /
+// /
+//
+/**
+ * 
+ * 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////// Takbeer e tahreema .  ////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  ////////////////////////////////////////////////////////////// Muslim  ////////////////////////////////////////////////////
+
+  PropheticWayOfPrayerModel(
+      id: 3,
+      arabicText:
+          "حَدَّثَنِي مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا حُجَيْنٌ، - وَهُوَ ابْنُ الْمُثَنَّى - حَدَّثَنَا اللَّيْثُ، عَنْ عُقَيْلٍ، ح وَحَدَّثَنِي مُحَمَّدُ بْنُ عَبْدِ اللَّهِ بْنِ قُهْزَاذَ، حَدَّثَنَا سَلَمَةُ بْنُ سُلَيْمَانَ، أَخْبَرَنَا يُونُسُ، كِلاَهُمَا عَنِ الزُّهْرِيِّ، بِهَذَا الإِسْنَادِ كَمَا قَالَ ابْنُ جُرَيْجٍ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم إِذَا قَامَ لِلصَّلاَةِ رَفَعَ يَدَيْهِ حَتَّى تَكُونَا حَذْوَ مَنْكِبَيْهِ ثُمَّ كَبَّرَ ",
+      urduText:
+          "یہ حدیث اسی سلسلہ کی سند کے ساتھ ال نے نقل کی ہے۔ زہری جیسا کہ ابن جریج نے روایت کیا ہے۔ رسول اللہ صلی اللہ علیہ وسلم جب نماز کے لیے کھڑے ہوتے تو دونوں ہاتھ کندھوں پر اٹھاتے اور پھر تکبیر پڑھتے۔",
+      englishText:
+          "This hadith has been transmitted with the same chain of transmitters by al. Zuhri as narrated by Ibn Juraij (who) said. When the Messenger of Allah (ﷺ) stood up for prayer, he raised hands (to the height) apposite the shoulders and then recited takbir.",
+      reference: "Sahih Muslim 390 - C"),
+
+  PropheticWayOfPrayerModel(
+      id: 2,
+      arabicText:
+          "حَدَّثَنِي مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا ابْنُ جُرَيْجٍ، حَدَّثَنِي ابْنُ شِهَابٍ، عَنْ سَالِمِ بْنِ عَبْدِ اللَّهِ، أَنَّ ابْنَ عُمَرَ، قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم إِذَا قَامَ لِلصَّلاَةِ رَفَعَ يَدَيْهِ حَتَّى تَكُونَا حَذْوَ مَنْكِبَيْهِ ثُمَّ كَبَّرَ فَإِذَا أَرَادَ أَنْ يَرْكَعَ فَعَلَ مِثْلَ ذَلِكَ وَإِذَا رَفَعَ مِنَ الرُّكُوعِ فَعَلَ مِثْلَ ذَلِكَ وَلاَ يَفْعَلُهُ حِينَ يَرْفَعُ رَأْسَهُ مِنَ السُّجُودِ ‏.‏",
+      urduText:
+          "ابن عمر رضی اللہ عنہما کہتے ہیں کہ رسول اللہ صلی اللہ علیہ وسلم جب نماز کے لیے کھڑے ہوتے تو اپنے دونوں ہاتھ کندھوں پر اٹھاتے، پھر تکبیر کہتے، اور جب رکوع کرنے لگتے تو پھر اسی طرح کرتے۔ اور جب رکوع سے اٹھے تو پھر اسے پسند کیا لیکن سجدے سے سر اٹھاتے وقت ایسا نہیں کیا۔",
+      englishText:
+          "Ibn Umar reported that the Messenger of Allah (ﷺ), when he stood up for prayer, used to raise his hands apposite the shoulders and then recited takbir (Allah-o-Akbar), and when he was about to bow he again did like it and when he raised himself from the ruku' (bowing posture) he again did like it, but he did not do it at the time of raising his head from prostration.",
+      reference: "Sahih Muslim 390 - B"),
+
+  PropheticWayOfPrayerModel(
+      id: 5,
+      arabicText:
+          "وَحَدَّثَنَاهُ مُحَمَّدُ بْنُ الْمُثَنَّى، حَدَّثَنَا ابْنُ أَبِي عَدِيٍّ، عَنْ سَعِيدٍ، عَنْ قَتَادَةَ، بِهَذَا الإِسْنَادِ أَنَّهُ رَأَى نَبِيَّ اللَّهِ صلى الله عليه وسلم وَقَالَ حَتَّى يُحَاذِيَ بِهِمَا فُرُوعَ أُذُنَيْهِ ",
+      urduText:
+          "اس حدیث کو قتادہ نے اسی سلسلہ سے روایت کیا ہے کہ انہوں نے رسول اللہ صلی اللہ علیہ وسلم کو ایسا کرتے ہوئے دیکھا (یعنی ہاتھ اٹھائے) یہاں تک کہ وہ کانوں کی لو کے مخالف تھے۔",
+      englishText:
+          "This hadith has been transmitted by Qatada with the same chain of transmitters that he saw the Messenger of Allah (ﷺ) doing this (i.e. raising his hands) till they were opposite the lobes of ears",
+      reference: "Sahih Muslim 391 - C"),
+
+  PropheticWayOfPrayerModel(
+      id: 6,
+      arabicText:
+          "وَحَدَّثَنَا يَحْيَى بْنُ يَحْيَى، قَالَ قَرَأْتُ عَلَى مَالِكٍ عَنِ ابْنِ شِهَابٍ، عَنْ أَبِي سَلَمَةَ بْنِ عَبْدِ الرَّحْمَنِ، أَنَّ أَبَا هُرَيْرَةَ، كَانَ يُصَلِّي لَهُمْ فَيُكَبِّرُ كُلَّمَا خَفَضَ وَرَفَعَ فَلَمَّا انْصَرَفَ قَالَ وَاللَّهِ إِنِّي لأَشْبَهُكُمْ صَلاَةً بِرَسُولِ اللَّهِ صلى الله عليه وسلم ",
+      urduText:
+          "ابو سلمہ نے بیان کیا:ابوہریرہ رضی اللہ عنہ نے ان کے لیے نماز پڑھائی اور رکوع و سجود میں جھکتے اور کھڑے ہونے پر تکبیر پڑھی اور نماز سے فارغ ہونے کے بعد فرمایا: اللہ کی قسم میں نماز کہتا ہوں جو رسول اللہ صلی اللہ علیہ وسلم کی نماز کے ساتھ بہترین مشابہت رکھتی ہے۔ ) آپ کے درمیان۔",
+      englishText:
+          "Abu Salama reported:Abu Huraira led prayer for them and recited takbir when he bent and raised himself (in ruku' and sujud) and after completing (the prayer) he said: By Allah I say prayer which has the best resemblance with the prayer of the Prophet (ﷺ) amongst you.",
+      reference: "Sahih Muslim 392 - A"),
+
+  PropheticWayOfPrayerModel(
+      id: 7,
+      arabicText:
+          "حَدَّثَنَا مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا ابْنُ جُرَيْجٍ، أَخْبَرَنِي ابْنُ شِهَابٍ، عَنْ أَبِي بَكْرِ بْنِ عَبْدِ الرَّحْمَنِ، أَنَّهُ سَمِعَ أَبَا هُرَيْرَةَ، يَقُولُ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم إِذَا قَامَ إِلَى الصَّلاَةِ يُكَبِّرُ حِينَ يَقُومُ ثُمَّ يُكَبِّرُ حِينَ يَرْكَعُ ثُمَّ يَقُولُ \" سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ \" حِينَ يَرْفَعُ صُلْبَهُ مِنَ الرُّكُوعِ ثُمَّ يَقُولُ وَهُوَ قَائِمٌ \" رَبَّنَا وَلَكَ الْحَمْدُ \" ثُمَّ يُكَبِّرُ حِينَ يَهْوِي سَاجِدًا ثُمَّ يُكَبِّرُ حِينَ يَرْفَعُ رَأْسَهُ ثُمَّ يُكَبِّرُ حِينَ يَسْجُدُ ثُمَّ يُكَبِّرُ حِينَ يَرْفَعُ رَأْسَهُ ثُمَّ يَفْعَلُ مِثْلَ ذَلِكَ فِي الصَّلاَةِ كُلِّهَا حَتَّى يَقْضِيَهَا وَيُكَبِّرُ حِينَ يَقُومُ مِنَ الْمَثْنَى بَعْدَ الْجُلُوسِ ثُمَّ يَقُولُ أَبُو هُرَيْرَةَ إِنِّي لأَشْبَهُكُمْ صَلاَةً بِرَسُولِ اللَّهِ صلى الله عليه وسلم ‏.‏",
+      urduText:
+          "ابوہریرہ نے بیان کیا:رسول اللہ صلی اللہ علیہ وسلم جب نماز کے لیے اٹھتے تو کھڑے ہوتے وقت اللہ اکبر کہتے، پھر رکوع کرتے وقت تکبیر کہتے۔ پھر کہو: \"اللہ نے اس کی سن لی جس نے اس کی تعریف کی\" جب رکوع کے بعد کھڑے ہو جاؤ، پھر کھڑے ہو کر کہو: \"اے ہمارے رب، تیری حمد ہے\"، پھر سجدے کے لیے اترتے وقت تکبیر کہے۔ سر اٹھانے پر تکبیر کہے، پھر سجدہ کرتے وقت تکبیر کہے، پھر سر اٹھانے پر تکبیر کہے۔ وہ پوری نماز میں اس طرح کرتے یہاں تک کہ اسے مکمل کر لیتے، اور جب بیٹھنے کی حالت اختیار کر کے دو رکعت کے آخر میں اٹھتے تو تکبیر کہتے۔ ابوہریرہ رضی اللہ عنہ نے کہا: میری نماز تم میں رسول اللہ صلی اللہ علیہ وسلم کی نماز کے ساتھ بہترین مشابہت رکھتی ہے۔",
+      englishText:
+          "Abu Huraira reported:When the Messenger of Allah (ﷺ) got up for prayer, he would say the takbir (Allah-o-Akbar) when standing, then say the takbir when bowing. then say:\" Allah listened to him who praised him,\" when coming to the erect position after bowing, then say while standing:\" To Thee, our Lord, be the praise\", then recite the takbir when getting down for prostration, then say the takbir on raising his head, then say the takbir on prostrating himself, then say the takbir on raising his head. He would do that throughout the whole prayer till he would complete it, and he would say the takbir when he would get up at the end of two rak'as after adopting the sitting posture. Abu Huraira said: My prayer has the best resemblance amongst you with the prayer of the Messenger of Allah (ﷺ).",
+      reference: "Sahih Muslim 392 - B / C"),
+  PropheticWayOfPrayerModel(
+      id: 8,
+      arabicText:
+          "حَدَّثَنَا مُحَمَّدُ بْنُ مِهْرَانَ الرَّازِيُّ، حَدَّثَنَا الْوَلِيدُ بْنُ مُسْلِمٍ، حَدَّثَنَا الأَوْزَاعِيُّ، عَنْ يَحْيَى بْنِ أَبِي كَثِيرٍ، عَنْ أَبِي سَلَمَةَ، أَنَّ أَبَا هُرَيْرَةَ، كَانَ يُكَبِّرُ فِي الصَّلاَةِ كُلَّمَا رَفَعَ وَوَضَعَ . فَقُلْنَا يَا أَبَا هُرَيْرَةَ مَا هَذَا التَّكْبِيرُ قَالَ إِنَّهَا لَصَلاَةُ رَسُولِ اللَّهِ صلى الله عليه وسلم ",
+      urduText:
+          "ابو سلمہ رضی اللہ عنہ سے روایت ہے کہ ابوہریرہ رضی اللہ عنہ نماز میں اٹھنے اور گھٹنے کے تمام مواقع پر تکبیر پڑھتے تھے۔ ہم نے کہا:اے ابوہریرہ یہ تکبیر کیا ہے؟ اس نے کہا: بے شک یہ رسول اللہ صلی اللہ علیہ وسلم کی دعا ہے۔",
+      englishText:
+          "Abu Salama reported that Abu Huraira recited takbir in prayer on all occasions of rising and kneeling. We said:O Abu Huraira, what is this takbir? He said: Verily it is the prayer of the Messenger of Allah (ﷺ).",
+      reference: "Sahih Muslim 392 - E"),
+
+  PropheticWayOfPrayerModel(
+      id: 9,
+      arabicText:
+          "حَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، حَدَّثَنَا يَعْقُوبُ، - يَعْنِي ابْنَ عَبْدِ الرَّحْمَنِ - عَنْ سُهَيْلٍ، عَنْ أَبِيهِ، عَنْ أَبِي هُرَيْرَةَ، أَنَّهُ كَانَ يُكَبِّرُ كُلَّمَا خَفَضَ وَرَفَعَ وَيُحَدِّثُ أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم كَانَ يَفْعَلُ ذَلِكَ ‏.‏",
+      urduText:
+          "سہیل نے اپنے والد سے روایت کی ہے کہ ابوہریرہ رضی اللہ عنہ (نماز میں) اٹھنے اور جھکنے کے تمام مواقع پر تکبیر کہتے تھے اور بیان کیا کہ رسول اللہ صلی اللہ علیہ وسلم ایسا کیا کرتے تھے۔",
+      englishText:
+          "Suhail reported on the authority of his father that Abu Huraira used to recite takbir on all occasions of rising and bending (in prayer) and narrated that the Messenger of Allah (ﷺ) used to do like that.",
+      reference: "Sahih Muslim 392 - F"),
+
+  PropheticWayOfPrayerModel(
+      id: 10,
+      arabicText:
+          "حَدَّثَنَا يَحْيَى بْنُ يَحْيَى، وَخَلَفُ بْنُ هِشَامٍ، جَمِيعًا عَنْ حَمَّادٍ، - قَالَ يَحْيَى أَخْبَرَنَا حَمَّادُ بْنُ زَيْدٍ، - عَنْ غَيْلاَنَ، عَنْ مُطَرِّفٍ، قَالَ صَلَّيْتُ أَنَا وَعِمْرَانُ بْنُ حُصَيْنٍ، خَلْفَ عَلِيِّ بْنِ أَبِي طَالِبٍ فَكَانَ إِذَا سَجَدَ كَبَّرَ وَإِذَا رَفَعَ رَأْسَهُ كَبَّرَ وَإِذَا نَهَضَ مِنَ الرَّكْعَتَيْنِ كَبَّرَ فَلَمَّا انْصَرَفْنَا مِنَ الصَّلاَةِ - قَالَ - أَخَذَ عِمْرَانُ بِيَدِي ثُمَّ قَالَ لَقَدْ صَلَّى بِنَا هَذَا صَلاَةَ مُحَمَّدٍ صلى الله عليه وسلم . أَوْ قَالَ قَدْ ذَكَّرَنِي هَذَا صَلاَةَ مُحَمَّدٍ صلى الله عليه وسلم ",
+      urduText:
+          "Mutarrif نے رپورٹ کیا:میں اور عمران بی۔ حسین نے علی کے پیچھے نماز پڑھی۔ ابو، طالب۔ اس نے سجدہ کرتے وقت تکبیر کہی اور جب سر اٹھایا تو تکبیر کہی اور (دو رکعت کے آخر میں بیٹھنے کی جگہ سے) اٹھتے ہوئے تکبیر کہی۔ جب ہم نماز سے فارغ ہوئے تو عمران نے میرا ہاتھ پکڑ کر کہا: اس نے (حضرت علی) نے محمد (صلی اللہ علیہ وآلہ وسلم) کی طرح نماز پڑھائی ہے یا فرمایا: درحقیقت اس نے میرے ذہن میں محمد (صلی اللہ علیہ وآلہ وسلم) کی نماز یاد کرائی ہے۔ وہ۔)",
+      englishText:
+          "Mutarrif reported:I and 'Imran b. Husain said prayer behind 'Ali b. Abu, Talib. He recited takbir when he prostrated, and he recited takbir when he raised his head and he recited takbir while rising up (from the sitting position at the end of two rak'ahs). When we had finished our prayer, 'Imran caught hold of my hand and said: He (Hadrat Ali) has led prayer like Muhammad (ﷺ) or he said: He in fact recalled to my mind the prayer of Muhammad (may peace be upon him.)",
+      reference: " Sahih Muslim 393"),
+
+  ////////////////////////////////////////////////////////////// Bukhari  ////////////////////////////////////////////////////
+
+//              there is no hadith on takbir in bukhari .
+
+  ////////////////////////////////////////////////////////////// ibn Majah  ////////////////////////////////////////////////////
+
+  PropheticWayOfPrayerModel(
+      id: 11,
+      arabicText:
+          "حَدَّثَنَا عَلِيُّ بْنُ مُحَمَّدٍ الطَّنَافِسِيُّ، حَدَّثَنَا أَبُو أُسَامَةَ، حَدَّثَنِي عَبْدُ الْحَمِيدِ بْنُ جَعْفَرٍ، حَدَّثَنَا مُحَمَّدُ بْنُ عَمْرِو بْنِ عَطَاءٍ، قَالَ سَمِعْتُ أَبَا حُمَيْدٍ السَّاعِدِيَّ، يَقُولُ كَانَ رَسُولُ اللَّهِ ـ صلى الله عليه وسلم ـ إِذَا قَامَ إِلَى الصَّلَاةِ اسْتَقْبَلَ الْقِبْلَةَ وَرَفَعَ يَدَيْهِ وَقَالَ \" اللَّهُ أَكْبَرُ \"",
+      urduText:
+          "محمد بن عمرو بن عطاء نے کہا:میں نے ابوحمید السعدی رضی اللہ عنہ کو کہتے سنا: جب رسول اللہ صلی اللہ علیہ وسلم نماز کے لیے کھڑے ہوتے تو نماز کی طرف منہ کرتے، ہاتھ اٹھاتے اور کہتے: اللہ اکبر (اللہ اکبر)۔ \"",
+      englishText:
+          "Muhammad bin ‘Amr bin ‘Ata’ said:“I heard Abu Humaid As-Sa’idi say: ‘When the Messenger of Allah (ﷺ) stood up for prayer, he would face the prayer direction, raise his hands, and say: “Allahu Akbar (Allah is Most Great).”",
+      reference: "Sunan Ibn Majah 803"),
+
+  //////////////////////////////////////////////////// Abu dawood  /////////////////////////////////////////////////////////
+
+  PropheticWayOfPrayerModel(
+      id: 12,
+      arabicText:
+          "حَدَّثَنَا ابْنُ مُعَاذٍ، حَدَّثَنَا خَالِدُ بْنُ الْحَارِثِ، حَدَّثَنَا حَاتِمٌ، - يَعْنِي ابْنَ أَبِي صَغِيرَةَ - عَنْ سِمَاكٍ، قَالَ سَمِعْتُ النُّعْمَانَ بْنَ بَشِيرٍ، قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم يُسَوِّي صُفُوفَنَا إِذَا قُمْنَا لِلصَّلاَةِ فَإِذَا اسْتَوَيْنَا كَبَّرَ ‏.‏",
+      urduText:
+          "نعمان بن بشیر رضی اللہ عنہ روایت کرتے ہیں:رسول اللہ صلی اللہ علیہ وسلم جب ہم نماز کے لیے کھڑے ہوتے تو ہماری صفیں سیدھی کرتے، اور جب ہم سیدھے ہوتے تو فرماتے: اللہ سب سے بڑا (تکبیر) ہے۔",
+      englishText:
+          "Narrated An-Nu'man ibn Bashir:The Messenger of Allah (ﷺ) used to straighten our rows when we stood up to pray, and when we were straight, he said: Allah is most great (takbir).",
+      reference: "Sunan Abi Dawud 665"),
+  PropheticWayOfPrayerModel(
+      id: 13,
+      arabicText:
+          "حَدَّثَنَا مُسَدَّدٌ، حَدَّثَنَا يَزِيدُ، - يَعْنِي ابْنَ زُرَيْعٍ - حَدَّثَنَا الْمَسْعُودِيُّ، حَدَّثَنِي عَبْدُ الْجَبَّارِ بْنُ وَائِلٍ، حَدَّثَنِي أَهْلُ، بَيْتِي عَنْ أَبِي أَنَّهُ، حَدَّثَهُمْ أَنَّهُ، رَأَى رَسُولَ اللَّهِ صلى الله عليه وسلم يَرْفَعُ يَدَيْهِ مَعَ التَّكْبِيرَةِ ",
+      urduText:
+          "وائل بن حجر رضی اللہ عنہ کہتے ہیں کہ میں نے رسول اللہ صلی اللہ علیہ وسلم کو تکبیر کہتے وقت اپنے ہاتھ اٹھاتے دیکھا۔",
+      englishText:
+          "Wa’il b.Hujr said that he saw the Messenger of Allah(ﷺ) raise his hands when he uttered the takbir (Allah is most great).",
+      reference: " Sunan Abi Dawud 725"),
+  PropheticWayOfPrayerModel(
+      id: 14,
+      arabicText:
+          "حَدَّثَنَا عُثْمَانُ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا شَرِيكٌ، عَنْ عَاصِمِ بْنِ كُلَيْبٍ، عَنْ أَبِيهِ، عَنْ وَائِلِ بْنِ حُجْرٍ، قَالَ رَأَيْتُ النَّبِيَّ صلى الله عليه وسلم حِينَ افْتَتَحَ الصَّلاَةَ رَفَعَ يَدَيْهِ حِيَالَ أُذُنَيْهِ - قَالَ - ثُمَّ أَتَيْتُهُمْ فَرَأَيْتُهُمْ يَرْفَعُونَ أَيْدِيَهُمْ إِلَى صُدُورِهُمْ فِي افْتِتَاحِ الصَّلاَةِ وَعَلَيْهِمْ بَرَانِسُ وَأَكْسِيَةٌ ",
+      urduText:
+          "وائل بن حجر کہتے ہیں:میں نے دیکھا کہ رسول اللہ صلی اللہ علیہ وسلم جب نماز شروع کرتے تو اپنے ہاتھ کانوں کے سامنے اٹھاتے۔ میں پھر واپس آیا اور دیکھا کہ جب وہ نماز پڑھنے لگے تو اپنے ہاتھ اپنے سینے تک اٹھائے ہوئے ہیں۔ انہوں نے لمبی ٹوپیاں اور کمبل پہن رکھے تھے۔",
+      englishText:
+          "Narrated Wa'il ibn Hujr:I witnessed the Prophet (ﷺ) raise his hands in front of his ears when he began to pray. I then came back and saw them (the people) raising their hands up to their chest when they began to pray. They wore long caps and blankets.",
+      reference: " Sunan Abi Dawud 728"),
+
+  PropheticWayOfPrayerModel(
+      id: 16,
+      arabicText:
+          "حَدَّثَنَا مُسَدَّدٌ، حَدَّثَنَا يَحْيَى، عَنِ ابْنِ أَبِي ذِئْبٍ، عَنْ سَعِيدِ بْنِ سَمْعَانَ، عَنْ أَبِي هُرَيْرَةَ، قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم إِذَا دَخَلَ فِي الصَّلاَةِ رَفَعَ يَدَيْهِ مَدًّا ‏.‏",
+      urduText:
+          "ابوہریرہ رضی اللہ عنہ روایت کرتے ہیں:جب رسول اللہ صلی اللہ علیہ وسلم نے نماز شروع کی تو اپنے دونوں ہاتھ بڑے زور سے اٹھائے۔",
+      englishText:
+          "Narrated AbuHurayrah:When the Messenger of Allah (ﷺ) began his prayer, he raised his hands extensively.",
+      reference: "Sunan Abi Dawud 753"),
+
+  PropheticWayOfPrayerModel(
+      id: 17,
+      arabicText:
+          "حَدَّثَنَا سُلَيْمَانُ بْنُ حَرْبٍ، حَدَّثَنَا حَمَّادٌ، عَنْ غَيْلاَنَ بْنِ جَرِيرٍ، عَنْ مُطَرِّفٍ، قَالَ صَلَّيْتُ أَنَا وَعِمْرَانُ بْنُ حُصَيْنٍ، خَلْفَ عَلِيِّ بْنِ أَبِي طَالِبٍ - رضى الله عنه - فَكَانَ إِذَا سَجَدَ كَبَّرَ وَإِذَا رَكَعَ كَبَّرَ وَإِذَا نَهَضَ مِنَ الرَّكْعَتَيْنِ كَبَّرَ فَلَمَّا انْصَرَفْنَا أَخَذَ عِمْرَانُ بِيَدِي وَقَالَ لَقَدْ صَلَّى هَذَا قِبَلَ أَوْ قَالَ لَقَدْ صَلَّى بِنَا هَذَا قِبَلَ صَلاَةِ مُحَمَّدٍ صلى الله عليه وسلم ‏.‏",
+      urduText:
+          "مطرف نے کہا:میں اور عمران بی۔ حسین نے سب کے پیچھے نماز پڑھی۔ ابی طالب رضی اللہ عنہ۔ جب سجدہ کیا تو تکبیر کہی (اللہ سب سے بڑا ہے) اور جب رکوع کیا تو تکبیر کہی اور جب دو رکعتوں کے آخر میں کھڑے ہوئے تو تکبیر کہی۔ جب ہم اپنی نماز سے فارغ ہوئے تو عمران نے میرا ہاتھ پکڑا اور کہا: اس نے ابھی ہماری نماز اسی طرح پڑھائی ہے جس طرح محمد صلی اللہ علیہ وسلم نے پڑھی تھی۔",
+      englishText:
+          "Mutarrif said:I and ‘Imran b. Husain offered prayer behind ‘All b. AbI Talib(may Allah be pleased with him). When he prostrated, he uttered the takbir (Allah is most great) and when he bowed, he uttered the takbir and when he stood up at the end of two rak’ahs, he uttered the takbir. When we finished our prayer, ‘Imran caught hold of my hand, and said: He has led us in prayer just now like the prayer offered by Muhammed(may peace by upon him).",
+      reference: "Sunan Abi Dawud 835"),
+
+  PropheticWayOfPrayerModel(
+      id: 18,
+      arabicText:
+          "حَدَّثَنَا عَمْرُو بْنُ عُثْمَانَ، حَدَّثَنَا أَبِي وَبَقِيَّةُ، عَنْ شُعَيْبٍ، عَنِ الزُّهْرِيِّ، قَالَ أَخْبَرَنِي أَبُو بَكْرِ بْنُ عَبْدِ الرَّحْمَنِ، وَأَبُو سَلَمَةَ أَنَّ أَبَا هُرَيْرَةَ، كَانَ يُكَبِّرُ فِي كُلِّ صَلاَةٍ مِنَ الْمَكْتُوبَةِ وَغَيْرِهَا يُكَبِّرُ حِينَ يَقُومُ ثُمَّ يُكَبِّرُ حِينَ يَرْكَعُ ثُمَّ يَقُولُ سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ ثُمَّ يَقُولُ رَبَّنَا وَلَكَ الْحَمْدُ قَبْلَ أَنْ يَسْجُدَ ثُمَّ يَقُولُ اللَّهُ أَكْبَرُ حِينَ يَهْوِي سَاجِدًا ثُمَّ يُكَبِّرُ حِينَ يَرْفَعُ رَأْسَهُ ثُمَّ يُكَبِّرُ حِينَ يَسْجُدُ ثُمَّ يُكَبِّرُ حِينَ يَرْفَعُ رَأْسَهُ ثُمَّ يُكَبِّرُ حِينَ يَقُومُ مِنَ الْجُلُوسِ فِي اثْنَتَيْنِ فَيَفْعَلُ ذَلِكَ فِي كُلِّ رَكْعَةٍ حَتَّى يَفْرُغَ مِنَ الصَّلاَةِ ثُمَّ يَقُولُ حِينَ يَنْصَرِفُ وَالَّذِي نَفْسِي بِيَدِهِ إِنِّي لأَقْرَبُكُمْ شَبَهًا بِصَلاَةِ رَسُولِ اللَّهِ صلى الله عليه وسلم إِنْ كَانَتْ هَذِهِ لَصَلاَتُهُ حَتَّى فَارَقَ الدُّنْيَا ‏.‏ قَالَ أَبُو دَاوُدَ هَذَا الْكَلاَمُ الأَخِيرُ يَجْعَلُهُ مَالِكٌ وَالزُّبَيْدِيُّ وَغَيْرُهُمَا عَنِ الزُّهْرِيِّ عَنْ عَلِيِّ بْنِ حُسَيْنٍ وَوَافَقَ عَبْدُ الأَعْلَى عَنْ مَعْمَرٍ شُعَيْبَ بْنَ أَبِي حَمْزَةَ عَنِ الزُّهْرِيِّ ‏.‏",
+      urduText:
+          "ابوبکر ب۔ عبدالرحمٰن اور ابو سلمہ نے کہا:ابوہریرہ رضی اللہ عنہ ہر نماز میں تکبیر کہتے، خواہ فرض ہو یا غیر فرض، جب کھڑے ہوتے تو تکبیر کہتے، اور رکوع کرتے وقت تکبیر کہتے، پھر کہتے: اللہ اس کی سنتا ہے جو اس کی حمد کرتا ہے۔ ; پھر سجدہ کرنے سے پہلے کہتا۔ \"اے ہمارے رب، تیری حمد ہو\"؛ پھر سجدے میں گرتے ہوئے کہتا: \"اللہ سب سے بڑا ہے\"۔ پھر جب سجدہ کے بعد سر اٹھاتا تو تکبیر کہتا، پھر سجدہ کرتے وقت تکبیر کہتا، اور جب بیٹھنے کے بعد دو رکعت کے آخر میں کھڑا ہوتا تو تکبیر کہتا۔ آپ صلی اللہ علیہ وسلم نماز سے فارغ ہونے تک ہر رکعت میں ایسا کرتے تھے۔ پھر نماز کے آخر میں کہتے: اس ذات کی قسم جس کے ہاتھ میں میری جان ہے، میں ان کی نماز کے معاملے میں رسول اللہ صلی اللہ علیہ وسلم سے زیادہ قریب ہوں۔ ایسی ہی نماز وہ ادا کرتے تھے یہاں تک کہ دنیا سے رخصت ہو گئے۔ابوداؤد کہتے ہیں: مالک، الزبیدی اور دیگر نے روایت کی ہے کہ وہ علی بن حسین رضی اللہ عنہ سے زہری کے آخری الفاظ بناتے ہیں۔ اور اس کی تائید معمر اور شعیب بن عبد العلا کے بیان کردہ ورژن سے ہوتی ہے۔ ابی حمزہ الزہری کی سند پر۔",
+      englishText:
+          "Abu bakr b. ‘Abd al-Rahman and abu Salamah said:Abu Hurairah would utter the takbir in every prayer, whether obligatory or non-obligatory, He would utter the takbir when he stood, and he would utter the takbir when he bowed, then he would say: “Allah listens to him who praises Him”; he then would say before prostrating himself; “ Our Lord, to Thee be praise”; then he would say while falling in prostration: “Allah is most great”; he then would utter the takbir when he raised his head after prostration, and then utter the takbir when he prostrated, and then utter takbir the takbir when he stood up at the end of two rak’ahs after sitting down. He used to do so in every rak’ah until he finished his prayer. Then he would say at the end of the prayer: By Him in Whose hands lies my life, I am closer to the Messenger of Allah(ﷺ) in respect of his prayer. Such was the prayer he used to offer until he departed from the world.Abu Dawud said: Malik, al-Zubaidi and others have narrated so that they form the last words from al-Zuhri on the authority of ‘Ali b, Husain. And this is supported by the version reported by ‘Abd al-A’la from Ma’mar and SHu’aib b. Abi Hamzah on the authority of Al-Zuhri.",
+      reference: "Sunan Abi Dawud 836"),
+
+/////////////////////////////////////////////////// Trimizi    ///////////////////////////////////////////////////////////////
+
+  PropheticWayOfPrayerModel(
+      id: 19,
+      arabicText:
+          "حَدَّثَنَا قُتَيْبَةُ، حَدَّثَنَا أَبُو الأَحْوَصِ، عَنْ أَبِي إِسْحَاقَ، عَنْ عَبْدِ الرَّحْمَنِ بْنِ الأَسْوَدِ، عَنْ عَلْقَمَةَ، وَالأَسْوَدِ، عَنْ عَبْدِ اللَّهِ بْنِ مَسْعُودٍ، قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم يُكَبِّرُ فِي كُلِّ خَفْضٍ وَرَفْعٍ وَقِيَامٍ وَقُعُودٍ وَأَبُو بَكْرٍ وَعُمَرُ ‏.‏ قَالَ وَفِي الْبَابِ عَنْ أَبِي هُرَيْرَةَ وَأَنَسٍ وَابْنِ عُمَرَ وَأَبِي مَالِكٍ الأَشْعَرِيِّ وَأَبِي مُوسَى وَعِمْرَانَ بْنِ حُصَيْنٍ وَوَائِلِ بْنِ حُجْرٍ وَابْنِ عَبَّاسٍ ‏.‏ قَالَ أَبُو عِيسَى حَدِيثُ عَبْدِ اللَّهِ بْنِ مَسْعُودٍ حَدِيثٌ حَسَنٌ صَحِيحٌ ‏.‏ وَالْعَمَلُ عَلَيْهِ عِنْدَ أَصْحَابِ النَّبِيِّ صلى الله عليه وسلم مِنْهُمْ أَبُو بَكْرٍ وَعُمَرُ وَعُثْمَانُ وَعَلِيٌّ وَغَيْرُهُمْ وَمَنْ بَعْدَهُمْ مِنَ التَّابِعِينَ وَعَلَيْهِ عَامَّةُ الْفُقَهَاءِ وَالْعُلَمَاءِ ‏.‏",
+      urduText:
+          "عبداللہ بن مسعود رضی اللہ عنہ نے بیان کیا:\"رسول اللہ صلی اللہ علیہ وسلم ہر نیچے کرنے، اٹھانے، کھڑے ہونے اور بیٹھنے کے لیے تکبیر کہتے، اور (اسی طرح) ابوبکر اور عمر رضی اللہ عنہما بھی۔\"",
+      englishText:
+          "Abdullah bin Mas'ud narrated:\"Allah's Messenger would say the Takbir for every lowering and raising, standing and sitting, and (so did) Abu Bakr and Umar.\"",
+      reference: "Jami` at-Tirmidhi 253"),
+
+  ////
+  ////
+  /////
+  ////
+  ////
+  //////
+  /////
+  ////
+  ///
+  ////
+  //////////////////////////////////////////////////////////// Nasai . /////////////////////////////////////////////////////
+
+  ///  There is no hadith in nasiai on takbir .
+  ///
+
+ */

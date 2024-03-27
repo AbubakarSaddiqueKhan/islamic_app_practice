@@ -6,12 +6,12 @@ import 'package:flutter_quran_api_practice/model/Quran/quran_api_model.dart';
 import 'package:flutter_quran_api_practice/model/Quran/quran_api_model.dart';
 import 'package:flutter_quran_api_practice/model/Quran/urdu_Audio_quran_model.dart';
 import 'package:flutter_quran_api_practice/model/Quran/urdu_translated_quran_api_model.dart';
-import 'package:flutter_quran_api_practice/view_models/api_service/quran_apis/arabic_audio_quran_api_service.dart';
-import 'package:flutter_quran_api_practice/view_models/api_service/quran_apis/arabic_quran_api_service.dart';
-import 'package:flutter_quran_api_practice/view_models/api_service/quran_apis/english_translated_quran_api_service.dart';
-import 'package:flutter_quran_api_practice/view_models/api_service/quran_apis/molana_modudi_urdu_translated_quran_api_service.dart';
-import 'package:flutter_quran_api_practice/view_models/api_service/quran_apis/urdu_audio_quran_api_service.dart';
-import 'package:flutter_quran_api_practice/view_models/api_service/quran_apis/urdu_translated_quran_api_service.dart';
+import 'package:flutter_quran_api_practice/view_models/api_service/Quran_Apis/arabic_audio_quran_api_service.dart';
+import 'package:flutter_quran_api_practice/view_models/api_service/Quran_Apis/arabic_quran_api_service.dart';
+import 'package:flutter_quran_api_practice/view_models/api_service/Quran_Apis/english_translated_quran_api_service.dart';
+import 'package:flutter_quran_api_practice/view_models/api_service/Quran_Apis/molana_modudi_urdu_translated_quran_api_service.dart';
+import 'package:flutter_quran_api_practice/view_models/api_service/Quran_Apis/urdu_audio_quran_api_service.dart';
+import 'package:flutter_quran_api_practice/view_models/api_service/Quran_Apis/urdu_translated_quran_api_service.dart';
 import 'package:meta/meta.dart';
 import 'dart:developer' as developer;
 

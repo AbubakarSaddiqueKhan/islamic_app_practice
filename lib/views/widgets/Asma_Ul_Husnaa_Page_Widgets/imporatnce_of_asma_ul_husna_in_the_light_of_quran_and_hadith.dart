@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quran_api_practice/model/Asma_Ul_Husna_Model/importance_of_asma_ul_husna_model.dart';
 import 'package:flutter_quran_api_practice/model/Asma_Ul_Husna_Model/local_asma_ul_husna.dart';
+import 'package:flutter_quran_api_practice/views/widgets/Asma_Ul_Husnaa_Page_Widgets/play_all_asma_ul_husna_custom_button.dart';
 
 class ImportanceOfAsmaAlHusnaInTheLightOfQuranAndHadithWidget
     extends StatelessWidget {
@@ -138,6 +139,7 @@ class ImportanceOfAsmaAlHusnaInTheLightOfQuranAndHadithWidgetsList
         ImportanceOfAsmaAlHusnaInTheLightOfQuranAndHadithWidget(
           asmaUlHusnaData: quranicVersesAndHadithListOnAllahNames[5],
         ),
+        const PlayAllAsmaUlHusnaCustomButton()
       ],
     );
   }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_quran_api_practice/views/screens/Quran_Screens/quran_main_page_design.dart';
 import 'package:flutter_quran_api_practice/views/widgets/Home_Page_Widgets/Home_Page_Categories/home_page_asma_ul_husna_custom_button.dart';
 
 class HomePageCategoriesWidget extends StatelessWidget {
@@ -21,34 +23,45 @@ class HomePageCategoriesWidget extends StatelessWidget {
               children: [
                 Expanded(
                     flex: 48,
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.15),
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(
-                            color: Colors.white,
-                            width: 1,
-                          )),
-                      alignment: Alignment.center,
-                      child: const Column(
-                        children: [
-                          Expanded(
-                              child: Icon(
-                            Icons.menu_book_outlined,
-                            color: Colors.white,
-                            size: 30,
-                          )),
-                          Expanded(
-                            child: Text(
-                              "Holy Quran",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  color: Colors.lime,
-                                  fontFamily: "Archivo"),
+                    child: InkWell(
+                      onTap: () {
+                        print("clicked..............");
+                        Navigator.of(context)
+                            .pushNamed(QuranMainPageDesign.pageName);
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.15),
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(
+                              color: Colors.white,
+                              width: 1,
+                            )),
+                        alignment: Alignment.center,
+                        child: Column(
+                          children: [
+                            Expanded(
+                                flex: 70,
+                                child: SizedBox(
+                                  child: Image.asset(
+                                    "assets/images/quran.png",
+                                    fit: BoxFit.contain,
+                                  ),
+                                )),
+                            const Expanded(
+                              flex: 30,
+                              child: Text(
+                                "القرآن",
+                                textAlign: TextAlign.center,
+                                textDirection: TextDirection.rtl,
+                                style: TextStyle(
+                                    fontSize: 22,
+                                    color: Colors.lime,
+                                    fontFamily: "Amiri"),
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     )),
                 const Spacer(flex: 2),

@@ -4,4 +4,6 @@ part of 'asma_ul_husnaa_bloc.dart';
 sealed class AsmaUlHusnaaEvent {}
 
 @immutable
-class FetchAsmaUlHusnaa extends AsmaUlHusnaaEvent {}
+class FetchAsmaUlHusnaaEvent extends AsmaUlHusnaaEvent {}
+
+class PlayAllAsmaUlHusnaaEvent extends AsmaUlHusnaaEvent {}

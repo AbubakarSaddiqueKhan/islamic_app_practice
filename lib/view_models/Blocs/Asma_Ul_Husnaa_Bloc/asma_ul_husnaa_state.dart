@@ -22,5 +22,7 @@ final class AsmaUlHusnaaLoadedState extends AsmaUlHusnaaState {
       required this.allAsmaUlHusnaasDataList});
 }
 
+class AsmaUlHusnaaPlayingState extends AsmaUlHusnaaState {}
+
 @immutable
 final class AsmaUlHusnaaErrorState extends AsmaUlHusnaaState {}

@@ -16,7 +16,7 @@ class AsmaUlHusnaMainPageDesign extends StatefulWidget {
 class _AsmaUlHusnaMainPageDesignState extends State<AsmaUlHusnaMainPageDesign> {
   @override
   void didChangeDependencies() {
-    context.read<AsmaUlHusnaaBloc>().add(FetchAsmaUlHusnaa());
+    context.read<AsmaUlHusnaaBloc>().add(FetchAsmaUlHusnaaEvent());
     super.didChangeDependencies();
   }
 
@@ -52,7 +52,7 @@ class _AsmaUlHusnaMainPageDesignState extends State<AsmaUlHusnaMainPageDesign> {
                 },
               );
             } else {
-              return Text("Error State");
+              return const Text("Error State");
             }
           },
         ),
