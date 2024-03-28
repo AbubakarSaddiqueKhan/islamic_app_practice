@@ -11,7 +11,7 @@ import 'dart:developer' as developer;
  * 
  */
 
-//
+// //
 // Text(
 //   "‏ ﻿﻿ ﴿Allah﴾",
 //   textDirection: TextDirection.rtl,
@@ -26,6 +26,10 @@ import 'dart:developer' as developer;
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Parah_Wise/parah_alif_laam_meem_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Parah_Wise/parah_qal_alam_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Parah_Wise/parah_rubama_simple_arabic_quran_data.dart';
+import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Parah_Wise/parah_wa_ma_ubiroo_simple_arabic_quran_data.dart';
 import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_aa_sajda_simple_arabic_quran_data.dart';
 import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_al_alaq_simple_arabic_quran_data.dart';
 import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_al_araf_simple_arabic_quran_data.dart';
@@ -46,7 +50,8 @@ import 'package:flutter_quran_api_practice/model/Hadith/all_hadith_editions_mode
 import 'package:flutter_quran_api_practice/model/Hadith/all_hadith_model.dart';
 import 'package:flutter_quran_api_practice/model/Hadith/arabic_lanuage_hadith_detailed_model.dart';
 import 'package:flutter_quran_api_practice/model/Hadith/hadith_edition_data_model.dart';
-import 'package:flutter_quran_api_practice/model/Quran_Updated/simple_quran.dart';
+import 'package:flutter_quran_api_practice/model/Quran_Updated/simple_arabic_quran_parah_wise.dart';
+import 'package:flutter_quran_api_practice/model/Quran_Updated/simple_quran_surah_wise.dart';
 import 'package:flutter_quran_api_practice/model/Quran_Updated/word_by_word_quran.dart';
 import 'package:flutter_quran_api_practice/model/month_conversion_api_model.dart';
 import 'package:flutter_quran_api_practice/model/prayers_timings_of_single_day.dart';
@@ -70,7 +75,7 @@ import 'package:flutter_quran_api_practice/view_models/Blocs/UserCurrentLocation
 import 'package:flutter_quran_api_practice/view_models/Blocs/ZikarOAzkarBloc/zikar_o_azkar_bloc.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/PrayersTimingsApiService/all_prayers_timmings_of_single_day_api_service.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/QiblaDirectionApiService/qibla_direction_api_service.dart';
-import 'package:flutter_quran_api_practice/view_models/api_service/Quran_Updated_Api_Service/simple_quran_api_service.dart';
+import 'package:flutter_quran_api_practice/view_models/api_service/Quran_Updated_Api_Service/simple_arabic_quran_surah_wise_api_service.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/Quran_Updated_Api_Service/word_by_word_quran_api_service.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/Tafsir_E_Quran_Api_Service/tafsir_e_quran_api_service.dart';
 import 'package:flutter_quran_api_practice/view_models/api_service/ZikarOAzkarApiService/zikar_o_azkar_api_service.dart';
@@ -326,8 +331,9 @@ class MyTest extends StatelessWidget {
     }
 
     void checkLocalData() {
-      SimpleArabicQuranModel simpleArabicQuranModel =
-          SimpleArabicQuranModel.fromJson(SurahAlAlaq.surahAlAlaqJsonData);
+      SimpleArabicQuranSurahWiseModel simpleArabicQuranModel =
+          SimpleArabicQuranSurahWiseModel.fromJson(
+              SurahAlAlaq.surahAlAlaqJsonData);
 
       developer.log(simpleArabicQuranModel.data.name);
       // developer.log(simpleArabicQuranModel.data.ayahs[0].text);
@@ -349,7 +355,12 @@ class MyTest extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () async {
-                  checkLocalData();
+                  SimpleArabicQuranParahWise simpleArabicQuranParahWiseData =
+                      SimpleArabicQuranParahWise.fromJson(
+                          ParahRubama.parahRubamaJsonData);
+                  developer
+                      .log(simpleArabicQuranParahWiseData.data.ayahs[0].text);
+                  // checkLocalData();
                   // SimpleArabicQuranApiService simpleArabicQuranApiService =
                   //     SimpleArabicQuranApiService();
                   // SimpleArabicQuranModel arabicQuranModel =

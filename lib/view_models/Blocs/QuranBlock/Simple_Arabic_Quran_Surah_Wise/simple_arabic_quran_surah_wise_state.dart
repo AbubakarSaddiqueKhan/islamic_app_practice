@@ -16,7 +16,7 @@ final class SimpleArabicQuranSurahWiseLoadingState
 @immutable
 final class SimpleArabicQuranSurahWiseLoadedState
     extends SimpleArabicQuranSurahWiseState {
-  final SimpleArabicQuranModel simpleArabicCompleteSurahData;
+  final SimpleArabicQuranSurahWiseModel simpleArabicCompleteSurahData;
 
   const SimpleArabicQuranSurahWiseLoadedState(
       {required this.simpleArabicCompleteSurahData});

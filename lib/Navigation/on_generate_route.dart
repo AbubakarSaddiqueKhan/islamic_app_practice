@@ -4,12 +4,17 @@ import 'package:flutter_quran_api_practice/view_models/Blocs/AddressConversionBl
 import 'package:flutter_quran_api_practice/view_models/Blocs/AllPrayersTimingsOfSingleDay/all_prayers_timings_of_single_day_bloc.dart';
 import 'package:flutter_quran_api_practice/view_models/Blocs/Asma_Ul_Husnaa_Bloc/asma_ul_husnaa_bloc.dart';
 import 'package:flutter_quran_api_practice/view_models/Blocs/IslamicDateConversionBloc/date_conversion_bloc.dart';
+import 'package:flutter_quran_api_practice/view_models/Blocs/QuranBlock/QuranAllParahLocalDataBloc/quran_all_parah_local_data_bloc.dart';
+import 'package:flutter_quran_api_practice/view_models/Blocs/QuranBlock/QuranAllSurahsLocalDataBloc/quran_all_surahs_local_data_bloc.dart';
+import 'package:flutter_quran_api_practice/view_models/Blocs/QuranBlock/SimpleArabicQuranParahWise/simple_arabic_quran_parah_wise_bloc.dart';
 import 'package:flutter_quran_api_practice/view_models/Blocs/QuranBlock/Simple_Arabic_Quran_Surah_Wise/simple_arabic_quran_surah_wise_bloc.dart';
 import 'package:flutter_quran_api_practice/view_models/Blocs/UpdateCurrentTimeBloc/update_current_time_bloc.dart';
 import 'package:flutter_quran_api_practice/view_models/Blocs/UserCurrentLocationBloc/user_current_location_bloc.dart';
 import 'package:flutter_quran_api_practice/views/screens/Asma_Al_Husna_Main_Page/asma_al_husnaa_main_page_design.dart';
 import 'package:flutter_quran_api_practice/views/screens/Home_Page_Screens/home_page_deisgn.dart';
+import 'package:flutter_quran_api_practice/views/screens/Quran_Screens/parah_main_page_design.dart';
 import 'package:flutter_quran_api_practice/views/screens/Quran_Screens/quran_main_page_design.dart';
+import 'package:flutter_quran_api_practice/views/screens/Quran_Screens/surah_main_page_design.dart';
 
 // Route<dynamic> onGenerateRoute(RouteSettings settings) {
 //   switch (settings.name) {
@@ -62,10 +67,36 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
 
     case QuranMainPageDesign.pageName:
       return SlideFromCenterLeftTransitionPageRoute(
-          page: BlocProvider(
-        create: (context) => SimpleArabicQuranSurahWiseBloc(),
+          page: MultiBlocProvider(
+        providers: [
+          BlocProvider(
+            create: (context) => SimpleArabicQuranSurahWiseBloc(),
+          ),
+          BlocProvider(
+            create: (context) => QuranAllSurahsLocalDataBloc(),
+          ),
+          BlocProvider(
+            create: (context) => QuranAllParahLocalDataBloc(),
+          ),
+        ],
         child: const QuranMainPageDesign(),
       ));
+
+    case SurahMainPageDesign.pageName:
+      return SlideFromCenterRightTransitionPageRoute(
+          settings: settings,
+          page: BlocProvider(
+            create: (context) => SimpleArabicQuranSurahWiseBloc(),
+            child: const SurahMainPageDesign(),
+          ));
+
+    case ParahMainPageDesign.pageName:
+      return SlideFromCenterLeftTransitionPageRoute(
+          settings: settings,
+          page: BlocProvider(
+            create: (context) => SimpleArabicQuranParahWiseBloc(),
+            child: const ParahMainPageDesign(),
+          ));
 
     default:
       return MaterialPageRoute(

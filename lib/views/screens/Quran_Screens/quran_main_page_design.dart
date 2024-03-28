@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quran_api_practice/views/widgets/Quran_Widgets/Quran_Main_Page_Widgets/quran_main_page_custom_tab_bar_view.dart';
 import 'package:flutter_quran_api_practice/views/widgets/Quran_Widgets/Quran_Main_Page_Widgets/quran_main_page_custom_tab_bar_widget.dart';
-import 'package:flutter_quran_api_practice/views/widgets/Quran_Widgets/Quran_Main_Page_Widgets/quran_main_page_custom_tabs.dart';
 
 class QuranMainPageDesign extends StatefulWidget {
   const QuranMainPageDesign({super.key});

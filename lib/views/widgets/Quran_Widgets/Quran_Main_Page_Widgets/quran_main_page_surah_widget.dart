@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_quran_api_practice/model/Quran_Updated/surah.dart';
-import 'package:flutter_quran_api_practice/view_models/Blocs/QuranBlock/Simple_Arabic_Quran_Surah_Wise/simple_arabic_quran_surah_wise_bloc.dart';
-import 'dart:developer' as developer;
+
+import 'package:flutter_quran_api_practice/views/screens/Quran_Screens/surah_main_page_design.dart';
 
 class QuranMainPageSurahWidget extends StatelessWidget {
   const QuranMainPageSurahWidget({super.key, required this.surah});
@@ -15,10 +14,8 @@ class QuranMainPageSurahWidget extends StatelessWidget {
       padding: const EdgeInsets.only(top: 2, bottom: 2, left: 10, right: 10),
       child: InkWell(
         onTap: () {
-          // developer.log("clicked on ${surah.surahNumber}");
-          context
-              .read<SimpleArabicQuranSurahWiseBloc>()
-              .add(FetchSimpleArabicQuranEvent(surahNumber: surah.surahNumber));
+          Navigator.of(context).pushNamed(SurahMainPageDesign.pageName,
+              arguments: surah.surahNumber);
         },
         child: Container(
           width: width,
@@ -29,7 +26,6 @@ class QuranMainPageSurahWidget extends StatelessWidget {
                 color: Colors.white,
                 width: 1,
               )),
-          // alignment: Alignment.center,
           child: Padding(
             padding: const EdgeInsets.all(10.0),
             child: Row(

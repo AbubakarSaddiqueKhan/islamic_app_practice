@@ -115,7 +115,7 @@ import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Su
 import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_yaseen_simple_arabic_quran_data.dart';
 import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_yunus_simple_arabic_quran_data.dart';
 import 'package:flutter_quran_api_practice/DataBase/Quran/Simple_Arabic_Quran/Surah_Wise/surah_yusuf_simple_arabic_quran_data.dart';
-import 'package:flutter_quran_api_practice/model/Quran_Updated/simple_quran.dart';
+import 'package:flutter_quran_api_practice/model/Quran_Updated/simple_quran_surah_wise.dart';
 import 'package:meta/meta.dart';
 import 'dart:developer' as developer;
 
@@ -132,18 +132,23 @@ class SimpleArabicQuranSurahWiseBloc extends Bloc<
   FutureOr<void> _mapFetchSimpleArabicQuranEventToStates(
       FetchSimpleArabicQuranEvent event,
       Emitter<SimpleArabicQuranSurahWiseState> emit) {
+    // developer.log("Event is : ${event.surahNumber} is called");
+
     try {
       emit(SimpleArabicQuranSurahWiseLoadingState());
 
-      // developer.log("Event is : ${event.surahNumber}");
+      // developer.log("loding done  is : ${event.surahNumber} is called");
 
-      SimpleArabicQuranModel simpleArabicQuranModel =
-          SimpleArabicQuranModel.fromJson(
+      SimpleArabicQuranSurahWiseModel simpleArabicQuranModel =
+          SimpleArabicQuranSurahWiseModel.fromJson(
               getJsonDataOfGivenSurah(surahNumber: event.surahNumber));
       // developer.log(simpleArabicQuranModel.code.toString());
+      // developer.log("loaded done  is : ${event.surahNumber} is called");
 
-      developer.log(
-          " ${simpleArabicQuranModel.data.ayahs.length.toString()} , ${simpleArabicQuranModel.data.name}");
+      // developer.log("Data is :${simpleArabicQuranModel.data.ayahs.length}");
+
+      // developer.log(
+      //     " ${simpleArabicQuranModel.data.ayahs.length.toString()} , ${simpleArabicQuranModel.data.name}");
 
       emit(SimpleArabicQuranSurahWiseLoadedState(
           simpleArabicCompleteSurahData: simpleArabicQuranModel));

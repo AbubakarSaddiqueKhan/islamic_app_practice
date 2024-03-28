@@ -3,22 +3,22 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 
-class SimpleArabicQuranModel {
+class SimpleArabicQuranSurahWiseModel {
   int code;
   String status;
   Data data;
-  SimpleArabicQuranModel({
+  SimpleArabicQuranSurahWiseModel({
     required this.code,
     required this.status,
     required this.data,
   });
 
-  SimpleArabicQuranModel copyWith({
+  SimpleArabicQuranSurahWiseModel copyWith({
     int? code,
     String? status,
     Data? data,
   }) {
-    return SimpleArabicQuranModel(
+    return SimpleArabicQuranSurahWiseModel(
       code: code ?? this.code,
       status: status ?? this.status,
       data: data ?? this.data,
@@ -33,8 +33,8 @@ class SimpleArabicQuranModel {
     };
   }
 
-  factory SimpleArabicQuranModel.fromMap(Map<String, dynamic> map) {
-    return SimpleArabicQuranModel(
+  factory SimpleArabicQuranSurahWiseModel.fromMap(Map<String, dynamic> map) {
+    return SimpleArabicQuranSurahWiseModel(
       code: map['code'] as int,
       status: map['status'] as String,
       data: Data.fromMap(map['data'] as Map<String, dynamic>),
@@ -43,8 +43,8 @@ class SimpleArabicQuranModel {
 
   String toJson() => json.encode(toMap());
 
-  factory SimpleArabicQuranModel.fromJson(String source) =>
-      SimpleArabicQuranModel.fromMap(
+  factory SimpleArabicQuranSurahWiseModel.fromJson(String source) =>
+      SimpleArabicQuranSurahWiseModel.fromMap(
           json.decode(source) as Map<String, dynamic>);
 
   @override
@@ -52,7 +52,7 @@ class SimpleArabicQuranModel {
       'WordByWordQuran(code: $code, status: $status, data: $data)';
 
   @override
-  bool operator ==(covariant SimpleArabicQuranModel other) {
+  bool operator ==(covariant SimpleArabicQuranSurahWiseModel other) {
     if (identical(this, other)) return true;
 
     return other.code == code && other.status == status && other.data == data;
